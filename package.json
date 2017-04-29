@@ -1,0 +1,24 @@
+{
+  "name": "spider_ysu_notice",
+  "version": "0.0.1",
+  "description": "爬取燕山大学所有通知",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puresox/spider_ysuNotice.git"
+  },
+  "author": "puresox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puresox/spider_ysuNotice/issues"
+  },
+  "homepage": "https://github.com/puresox/spider_ysuNotice#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "moment": "^2.18.1",
+    "request": "^2.81.0"
+  }
+}
