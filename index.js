@@ -10,9 +10,14 @@ const spiderNotice = ($, i) => {
   if (i < length) {
     const title = $('a', '#main_mid_content').eq(i).attr('title')
       .trim()
-      .replace(/\//g, '-')
+      .replace(/\//g, '-'
+      .replace(/\\/g, '-'))
       .replace(/</g, '《')
-      .replace(/>/g, '》');
+      .replace(/>/g, '》')
+      .replace(/:/g, '：')
+      .replace(/"/g, '“')
+      .replace(/\*/g, '&')
+      .replace(/\?/g, '？');
     let href = $('a', '#main_mid_content').eq(i).attr('href').trim();
     const patt = new RegExp('http://');
     if (!patt.test(href)) {
