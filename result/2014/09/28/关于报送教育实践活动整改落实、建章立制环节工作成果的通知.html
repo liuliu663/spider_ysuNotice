@@ -1,7 +1,512 @@
-function (selector, context, r, opts) {
-    if (!(this instanceof initialize)) {
-      return new initialize(selector, context, r, opts);
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title>关于报送教育实践活动整改落实、建章立制环节工作成果的通知-燕山大学党的群众路线教育实践活动专题网站</title>
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta name="keywords" content="">
+<meta name="description" content=""><link rel="stylesheet" type="text/css" href="../../style/list.css" media="screen"><script language="javascript" type="text/javascript" src="../../dfiles/5313/include/dedeajax2.js"></script><script language="javascript" type="text/javascript">
+<!--
+    function CheckLogin(){
+      var taget_obj = document.getElementById('_ajax_feedback');
+      myajax = new DedeAjax(taget_obj,false,false,'','','');
+      myajax.SendGet2("/member/ajax_feedback.php");
+      DedeXHTTP = null;
     }
-    opts = _.defaults(opts || {}, options);
-    return Cheerio.call(this, selector, context, r || root, opts);
-  }
+    function checkSubmit(){
+        if(document.feedback.msg.value!='') document.feedback.submit();
+        else alert("评论内容不能为空！");
+    }
+function postBadGood(ftype,fid)
+{
+    var taget_obj = document.getElementById(ftype+fid);
+    var saveid = GetCookie('badgoodid');
+    if(saveid != null)
+    {
+        var saveids = saveid.split(',');
+        var hasid = false;
+        saveid = '';
+        j = 1;
+        for(i=saveids.length-1;i>=0;i--)
+        {
+            if(saveids[i]==fid && hasid) continue;
+            else {
+                if(saveids[i]==fid && !hasid) hasid = true;
+                saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+                j++;
+                if(j==10 && hasid) break;
+                if(j==9 && !hasid) break;
+            }
+        }
+        if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+        else saveid += ','+fid;
+        SetCookie('badgoodid',saveid,1);
+    }
+    else
+    {
+        SetCookie('badgoodid',fid,1);
+    }
+    myajax = new DedeAjax(taget_obj,false,false,'','','');
+    myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+    DedeXHTTP = null;
+}
+function postDigg(ftype,aid)
+{
+    var taget_obj = document.getElementById('newdigg');
+    var saveid = GetCookie('diggid');
+    if(saveid != null)
+    {
+        var saveids = saveid.split(',');
+        var hasid = false;
+        saveid = '';
+        j = 1;
+        for(i=saveids.length-1;i>=0;i--)
+        {
+            if(saveids[i]==aid && hasid) continue;
+            else {
+                if(saveids[i]==aid && !hasid) hasid = true;
+                saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+                j++;
+                if(j==20 && hasid) break;
+                if(j==19 && !hasid) break;
+            }
+        }
+        if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+        else saveid += ','+aid;
+        SetCookie('diggid',saveid,1);
+    }
+    else
+    {
+        SetCookie('diggid',aid,1);
+    }
+    myajax = new DedeAjax(taget_obj,false,false,'','','');
+    var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+    myajax.SendGet2(url);
+    DedeXHTTP = null;
+}
+function getDigg(aid)
+{
+    var taget_obj = document.getElementById('newdigg');
+    myajax = new DedeAjax(taget_obj,false,false,'','','');
+    myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+    DedeXHTTP = null;
+}
+
+-->
+</script>
+
+<!--Announced by Visual SiteBuilder 9-->
+<link rel="stylesheet" type="text/css" href="../../_sitegray/_sitegray_d.css" />
+<script language="javascript" src="../../_sitegray/_sitegray.js"></script>
+<!-- CustomerNO:77656262657232307e7f47545350544a03040000 -->
+<link rel="stylesheet" type="text/css" href="../../content.vsb.css" />
+<META Name="keywords" Content="燕山大学党的群众路线教育实践活动专题网站" />
+<script type="text/javascript" src="../../system/resource/js/counter.js"></script>
+<script type="text/javascript">_jsq_(1012,'/content.jsp',1763,1035081666)</script>
+</head>
+<body>
+<div id="header" class="width986">
+<div id="topnav" class="yahei"><span class="left"><a class="white" href="http://kxfzg.ysu.edu.cn/">燕山大学党的群众路线教育实践活动专题网站</a></span><span class="right"><a class="white" href="http://www.ysu.edu.cn/" rel="nofollow" target="_blank">燕山大学</a> - <a class="white" href="http://news.ysu.edu.cn/" rel="nofollow" target="_blank">燕山大学新闻网</a></span></div>
+<div id="banner"></div>
+<div id="menu" class="yahei"><!--#begineditable name="网站导航" viewid="50668"--><style type="text/css">
+td.b1_0_{FONT-SIZE:9pt;}
+td.b2_0_{FONT-SIZE:9pt;}
+td.b3_0_{FONT-SIZE:9pt;BORDER-BOTTOM: #cccccc 1px solid;BACKGROUND-COLOR: #eeeeee;BORDER-RIGHT: #cccccc 1px solid;}
+td.b4_0_{FONT-SIZE:9pt;BORDER-BOTTOM: #cccccc 1px solid;BACKGROUND-COLOR: #eeeeee;BORDER-RIGHT: #cccccc 1px solid;}
+a.menu0_0_:link {TEXT-DECORATION: none;};
+a.menu0_0_:visited { TEXT-DECORATION: none;};
+a.menu0_0_:hover {TEXT-DECORATION: none;};
+a.menu0_0_:active {TEXT-DECORATION: none;};
+table.tb1_0_{FONT-SIZE:9pt;border:0;}
+span.s1_0_{LINE-HEIGHT: 160%;FONT-FAMILY: 宋体;COLOR: #ffff00;FONT-SIZE: 10pt;TEXT-DECORATION: underline;}
+span.s2_0_{LINE-HEIGHT: 160%;FONT-FAMILY: 宋体;COLOR: #cc0000;FONT-SIZE: 11pt;TEXT-DECORATION: none;}
+span.s10_0_{LINE-HEIGHT: 160%;FONT-FAMILY: 宋体;COLOR: #ffffff;FONT-SIZE: 10pt;TEXT-DECORATION: none;}
+span.s20_0_{LINE-HEIGHT: 160%;FONT-FAMILY: 宋体;COLOR: #000000;FONT-SIZE: 11pt;TEXT-DECORATION: none;}
+</style>
+<SCRIPT language="javascript"> 
+ var showfix_0_ = 1;
+ var isvertical_0_ = false;
+</SCRIPT>
+<script language="javascript" src="../../system/resource/js/menu/text.js"></script>
+<TABLE id="t1_0_" cellSpacing="0" cellPadding="0" border="0" height="0" width="0"><TR><TD valign="center"></TD><TD valign="middle" height="0" width="0" nowrap class="b1_0_" align="center" id="a_0_1001" onmouseover="tshowLayers('1001','b2_0_', '_0_')" onmouseout="thideLayers('1001','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../index.htm"><span class="fontstyle50668">&nbsp;专题首页&nbsp;</span></a></TD><TD valign="center" class="leaderfont50668">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1002" onmouseover="tshowLayers('1002','b2_0_', '_0_')" onmouseout="thideLayers('1002','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../zzjg.htm"><span class="fontstyle50668">&nbsp;组织机构&nbsp;</span></a></TD><TD valign="center" class="leaderfont50668">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1003" onmouseover="tshowLayers('1003','b2_0_', '_0_')" onmouseout="thideLayers('1003','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../xxwj.htm"><span class="fontstyle50668">&nbsp;学校文件&nbsp;</span></a></TD><TD valign="center" class="leaderfont50668">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1004" onmouseover="tshowLayers('1004','b2_0_', '_0_')" onmouseout="thideLayers('1004','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../hdjb.htm"><span class="fontstyle50668">&nbsp;活动简报&nbsp;</span></a></TD><TD valign="center" class="leaderfont50668">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1005" onmouseover="tshowLayers('1005','b2_0_', '_0_')" onmouseout="thideLayers('1005','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../hdkx.htm"><span class="fontstyle50668">&nbsp;活动快讯&nbsp;</span></a></TD><TD valign="center" class="leaderfont50668">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1006" onmouseover="tshowLayers('1006','b2_0_', '_0_')" onmouseout="thideLayers('1006','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../jcxl.htm"><span class="fontstyle50668">&nbsp;基层巡礼&nbsp;</span></a></TD><TD valign="center" class="leaderfont50668">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1007" onmouseover="tshowLayers('1007','b2_0_', '_0_')" onmouseout="thideLayers('1007','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../xxzl.htm"><span class="fontstyle50668">&nbsp;学习资料&nbsp;</span></a></TD><TD valign="center" class="leaderfont50668">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1009" onmouseover="tshowLayers('1009','b2_0_', '_0_')" onmouseout="thideLayers('1009','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../lljd.htm"><span class="fontstyle50668">&nbsp;理论解读&nbsp;</span></a></TD></TR></TR></table><!--#endeditable--></div>
+<div id="timeAndSearch">
+<div id="time" class="fl"><script language="javascript" type="text/javascript">
+setInterval("document.getElementById('time').innerHTML='当前时间：' + new Date().toLocaleString()+ ' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000)</script></div>
+<div class="search">
+<div class="form" style="width: 300px;float: left;height: 30px"></div>
+<div id="suggest" style="width: 220px;float: right;height: 30px"><a href="mailto:yjzj@ysu.edu.cn" target="_blank">征求意见箱 zqyj@ysu.edu.cn</a></div></div><!-- /search --></div></div><!-- /header --><br class="clear">
+<div class="channel-nav w986">
+<ul>
+<li class="thisclass"><a href="../../html/lilunjiedu/peopledaily/index.html"><span>人民日报：学习实践活动系列评论</span></a> </li></ul><span class="back"><a href="../../">返回首页</a> </span></div><!-- /channel-nav -->
+<div class="w986">
+<div class="pleft">
+<div class="place">
+<h1><strong>当前位置:</strong> <a href="http://kxfzg.ysu.edu.cn//"></a>&gt;&nbsp; <!--#begineditable name="装饰文字1" viewid="50697"--><span class="titlestyle50697">通知公告</span><!--#endeditable--></h1></div><!-- /place -->
+<div class="viewbox">
+<div class="title"></div>
+<div class="dede_pages" style="text-align: left"><!--#begineditable name="文章内容" viewid="50601"-->
+<LINK href="../../system/resource/style/component/news/content/title.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+     .content{margin:auto;text-align:left;line-height:18px;padding:3px 0 0 0;color:#727272;}
+     .process{width:162px;height:11px;background:#EDEDED;overflow:hidden;float:left;margin-left:26px !important;margin-left:13px;margin-right:10px;}
+     .process div{width:160px;height:11px;background:url(../../system/resource/images/newsvote/bg.gif) repeat-x;border-left:1px solid #000;border-right:1px solid #000;}
+     .process .style7{border-left-color:#ff0000;border-right-color:#ff0000;background-position:0 -77px;}
+     
+</style>
+
+
+<script language="javascript" src="../../_dwr/interface/NewsvoteDWR.js"></script>
+<script language="javascript" src="../../_dwr/engine.js"></script>
+<script language="javascript" src="../../_dwr/util.js"></script>
+<script language="javascript" src="../../system/resource/js/news/newscontent.js"></script>
+<script type="text/javascript">
+
+NewsvoteDWR.getNewsLinkUrl(1763,"1035081666","vsb",newsSkip);
+function newsSkip(data)
+{
+    if(data != "")
+    {
+        window.location.href = data;
+    }
+}
+</script>
+
+
+
+<form name="form50601a">
+<table border="0" class="winstyle50601" width="100%" cellspacing="0" cellpadding="0">
+
+      <tr><td class="titlestyle50601" align="center">
+关于报送教育实践活动整改落实、建章立制环节工作成果的通知
+      </td></tr>
+      <tr height="30"><td align="center">
+            <span class="timestyle50601">
+                 2014-09-28 09:58</span>
+            <span class="authorstyle50601">&nbsp;</span>
+            
+        </td></tr>
+        <tr><td align="right">
+        <span>
+
+        </span>
+        </td></tr>
+<tr><td height="1" BACKGROUND="../../dfiles/5313/images/top_border.jpg"></td></tr>
+      <tr><td class="contentstyle50601">
+        <div class="c50601_content" id="vsb_newscontent"><div id="vsb_content">
+           <p class="MsoNormal" align="center" style="text-align: center;line-height: 29pt;margin: 0cm 0cm 15.6pt;mso-para-margin-bottom: 1.0gd;mso-line-height-rule: exactly"><b style="mso-bidi-font-weight: normal"><span style="font-family: 宋体;font-size: 20pt;mso-ascii-font-family: 'Times New Roman';mso-hansi-font-family: 'Times New Roman'">关于报送教育实践活动整改落实、建章立制环节工作成果的通知</span></b><b style="mso-bidi-font-weight: normal"><span lang="EN-US" style="font-size: 20pt"> 
+   <!--?xml:namespace prefix="o" ns="urn:schemas-microsoft-com:office:office" /-->
+   <!--?xml:namespace prefix="o" /-->
+   <o:p></o:p></span></b></p> 
+<p class="MsoNormal" style="line-height: 29pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">校属各单位：<span lang="EN-US"> 
+   <o:p></o:p></span></span></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">当前，教育实践活动已进入整改落实、建章立制环节。为及时了解各单位工作进展情况，进一步总结经验、树立典型、突出特色，请各单位报送在整改落实、建章立制环节取得的工作成果。具体安排如下。<span lang="EN-US"> 
+   <o:p></o:p></span></span></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly;mso-outline-level: 1"><b style="mso-bidi-font-weight: normal"><span style="font-family: 仿宋_GB2312;font-size: 16pt">一、报送的主要内容<span lang="EN-US"> 
+    <o:p></o:p></span></span></b></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">（一）开展教育实践活动的成功经验和创新做法；<span lang="EN-US"> 
+   <o:p></o:p></span></span></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">（二）解决突出问题、狠抓整改落实、及时建章立制的情况和创新做法；<span lang="EN-US"> 
+   <o:p></o:p></span></span></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">（三）制度成果、理论成果、实践成果的具体体现和党员干部作风形象出现的新气象新变化；<span lang="EN-US"> 
+   <o:p></o:p></span></span></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">（四）活动开展过程中的先进典型和先进事迹。<span lang="EN-US"> 
+   <o:p></o:p></span></span></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly;mso-outline-level: 1"><b style="mso-bidi-font-weight: normal"><span style="font-family: 仿宋_GB2312;font-size: 16pt">二、有关要求及说明<span lang="EN-US"> 
+    <o:p></o:p></span></span></b></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">（一）请各单位认真梳理总结已取得的工作成果，形成工作总结、新闻报道等文字材料，并填写《燕山大学教育实践活动整改落实、建章立制环节工作成果统计表》（见附件），于<font face="仿宋_GB2312"><span lang="EN-US">10</span>月<span lang="EN-US">10</span>日前，<span lang="EN-US"><a href="mailto:将有关材料发送至qzlx@ysu.edu.cn"><span lang="EN-US" style="color: windowtext;text-decoration: none;text-underline: none"><span lang="EN-US">发送至qzlx@ysu.edu.cn</span></span></a></span>。之后取得的工作成果请随时报送。<span lang="EN-US"> 
+    <o:p></o:p></span></font></span></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">（二）请各单位注重报送材料的时效性和质量，及时报送工作成果，单位主要负责人要认真审核报送材料。<span lang="EN-US"> 
+   <o:p></o:p></span></span></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">（三）材料经校活动办审核后，将在学校教育实践活动专题网站等校内媒体发布，并择优向上级报送。<span lang="EN-US"> 
+   <o:p></o:p></span></span></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312;font-size: 16pt">
+  <o:p>
+   &nbsp; 
+  </o:p></span></p> 
+<p class="MsoNormal" style="line-height: 29pt;text-indent: 32.25pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">附件：<font face="仿宋_GB2312"><span style="letter-spacing: 0.3pt"><span style="font-family: 仿宋_GB2312;font-size: 16pt;mso-font-kerning: 1.0pt;mso-bidi-font-family: 'Times New Roman';mso-hansi-font-family: 'Times New Roman';mso-ansi-language: EN-US;mso-fareast-language: ZH-CN;mso-bidi-language: AR-SA">燕山大学教育实践活动整改落实、建章立制环节工作成果统计表</span></span></font></span><span lang="EN-US" style="font-family: 仿宋_GB2312;font-size: 15pt;mso-font-kerning: 0pt;mso-bidi-font-family: 宋体;mso-hansi-font-family: 宋体"> 
+  <o:p>
+   &nbsp; 
+  </o:p></span></p> 
+<p class="p0" align="right" style="text-align: right;line-height: 29pt;text-indent: 32pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;letter-spacing: 2.25pt;font-size: 16pt">燕山大学党的群众路线 </span><span lang="EN-US" style="font-size: 9pt">
+  <o:p></o:p></span></p> 
+<p class="p0" align="right" style="text-align: right;line-height: 29pt;text-indent: 32pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span style="font-family: 仿宋_GB2312;font-size: 16pt">教育实践活动领导小组办公室 <span lang="EN-US">
+   <o:p></o:p></span></span></p> 
+<p class="p0" align="center" style="text-align: center;line-height: 29pt;text-indent: 32pt;margin: 0cm 0cm 0pt;mso-line-height-rule: exactly"><span lang="EN-US" style="font-family: 仿宋_GB2312;font-size: 16pt"><font face="仿宋_GB2312"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+   <!--?xml:namespace prefix="st1" ns="urn:schemas-microsoft-com:office:smarttags" /-->
+   <!--?xml:namespace prefix="st1" /-->
+   <st1:chsdate w:st="on" isrocdate="False" islunardate="False" day="28" month="9" year="2014">
+    <span lang="EN-US" style="font-family: 仿宋_GB2312;font-size: 16pt;mso-font-kerning: 1.0pt;mso-bidi-font-family: 'Times New Roman';mso-hansi-font-family: 'Times New Roman';mso-ansi-language: EN-US;mso-fareast-language: ZH-CN;mso-bidi-language: AR-SA">2014</span> 
+    <span style="font-family: 仿宋_GB2312;font-size: 16pt;mso-font-kerning: 1.0pt;mso-bidi-font-family: 'Times New Roman';mso-hansi-font-family: 'Times New Roman';mso-ansi-language: EN-US;mso-fareast-language: ZH-CN;mso-bidi-language: AR-SA">年<font face="仿宋_GB2312"><span lang="EN-US">9</span>月<span lang="EN-US">28</span>日</font></span> 
+   </st1:chsdate></font></span></p>
+</div></div>
+          
+           
+           
+        </td></tr>
+        
+        <tr><td class="pagestyle50601" align="left">
+        </td></tr>
+        <tr><td><div id="div_vote_id"></div></td></tr>
+    <tr><td align="left"><span>
+             <script language="javascript" src="../../system/resource/js/ajax.js"></script><span>附件【<a href="../../system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1035081666&wbfileid=246348"><span>燕山大学教育实践活动整改落实、建章立制环节工作成果统计表.doc</span></a>】</span><span>已下载<span id="nattach246348"><script language="javascript">getClickTimes(246348,1035081666,"wbnewsfile","attach")</script></span>次</span><br>
+             
+      </span></td></tr>
+      
+      <tr>
+         <td align="center">
+            
+         </td>
+      </tr>
+
+      <tr><td align="right">
+<table><tr><td class="contextstyle50601"><a href="1766.htm"><span class="contextstyle50601">上一条：关于对学校领导班子党的群众路线教育实践活动“两方案一计划一清单”进行公示的通知</span></a></td></tr><tr><td class="contextstyle50601"><a href="1761.htm"><span class="contextstyle50601">下一条：关于做好各中层单位领导班子“两方案一计划一清单”及党员领导干部“一措施一清单”制定、审核等有关事项的通知（燕大群组办字[2014]22号）</span></a></td></tr></table>      </td></tr>
+
+</table>
+</form>
+
+
+
+<script type="text/javascript">
+
+function dosuba50601a()
+{
+    try{
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.indexOf("msie 8")>-1)
+        {
+            window.external.AddToFavoritesBar(document.location.href,document.title,"");//IE8
+        }else{
+            if (document.all) 
+            {
+                window.external.addFavorite(document.location.href, document.title);
+            }else if(window.sidebar)
+            {
+                window.sidebar.addPanel( document.title, document.location.href, "");//firefox
+            }
+        }
+
+    }
+    catch (e){alert("无法自动添加到收藏夹，请使用 Ctrl + d 手动添加");}
+}
+
+
+</script>
+<!--#endeditable--></div><!-- /pages --><br class="clear">
+<div class="handle"><br class="clear"></div><!-- /handle --></div><!-- /viewbox --></div><!-- /pleft -->
+<div class="pright">
+<div class="commend">
+<dl class="tbox">
+<dt><strong>推荐内容</strong> 
+<dd>
+<div style="height: 120px"><!--#begineditable name="推荐内容" viewid="50706"--><table width="100%" cellspacing="4" cellpadding="0">
+  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50706"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1804.htm" class="c50706" title="关于对教育实践活动整改落实情况进行“回头看”的通知（燕大群组办字[2015]1号）" target="_blank">
+        关于对教育实践活动整改落实...
+        </a>
+        
+        
+        
+        <span valign="middle" class="timestyle50706" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50706"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1803.htm" class="c50706" title="关于对行政办公用房整改工作专项检查情况的通报（燕大群组办[2014]27号）" target="_blank">
+        关于对行政办公用房整改工作...
+        </a>
+        
+        
+        
+        <span valign="middle" class="timestyle50706" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50706"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1802.htm" class="c50706" title="关于开展在职党员到社区报到争做“两个先锋”活动的通知" target="_blank">
+        关于开展在职党员到社区报到...
+        </a>
+        
+        
+        
+        <span valign="middle" class="timestyle50706" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50706"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1801.htm" class="c50706" title="关于在全校党员干部中开展“争当师生喜爱的好干部”活动的工作方案 燕大群组办[2014]26号" target="_blank">
+        关于在全校党员干部中开展“...
+        </a>
+        
+        
+        
+        <span valign="middle" class="timestyle50706" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50706"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1774.htm" class="c50706" title="关于印发孟卫东同志《在燕山大学党的群众路线教育实践活动总结大会上的讲话》的通知（燕大群组办[2014]25号）" target="_blank">
+        关于印发孟卫东同志《在燕山...
+        </a>
+        
+        
+        
+        <span valign="middle" class="timestyle50706" width="1%" nowrap></span>
+            </td>
+        </tr>
+</table><!--#endeditable--></div></dd></dl></div><!-- /commend -->
+<div class="hot">
+<dl class="tbox">
+<dt><strong>热点内容</strong> 
+<dd>
+<div style="height: 230px"><!--#begineditable name="热点内容" viewid="50705"--><table width="100%" cellspacing="4" cellpadding="0">
+  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50705"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1608.htm" class="c50705" title="关于做好“以考促学”活动准备工作的通知（燕大群组办字[2014]11号）" target="_blank">
+        关于做好“以考...
+        </a>
+        
+        
+        <span class="clickstyle50705">&nbsp;&nbsp;(点击：<span id="nu41608" name="nu41608"></span>)</span>
+        <span valign="middle" class="timestyle50705" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50705"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1704.htm" class="c50705" title="关于进一步做好撰写修改班子成员个人对照检查材料等有关事项的通知（燕大群组办字[2014]16号）" target="_blank">
+        关于进一步做好...
+        </a>
+        
+        
+        <span class="clickstyle50705">&nbsp;&nbsp;(点击：<span id="nu41704" name="nu41704"></span>)</span>
+        <span valign="middle" class="timestyle50705" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50705"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1006/1698.htm" class="c50705" title="体育学院召开党的群众路线教育实践活动第二环节工作部署会议" target="_blank">
+        体育学院召开党...
+        </a>
+        
+        
+        <span class="clickstyle50705">&nbsp;&nbsp;(点击：<span id="nu41698" name="nu41698"></span>)</span>
+        <span valign="middle" class="timestyle50705" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50705"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1005/1732.htm" class="c50705" title="马克思主义学院召开领导班子专题民主生活会" target="_blank">
+        马克思主义学院...
+        </a>
+        
+        
+        <span class="clickstyle50705">&nbsp;&nbsp;(点击：<span id="nu41732" name="nu41732"></span>)</span>
+        <span valign="middle" class="timestyle50705" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50705"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1803.htm" class="c50705" title="关于对行政办公用房整改工作专项检查情况的通报（燕大群组办[2014]27号）" target="_blank">
+        关于对行政办公...
+        </a>
+        
+        
+        <span class="clickstyle50705">&nbsp;&nbsp;(点击：<span id="nu41803" name="nu41803"></span>)</span>
+        <span valign="middle" class="timestyle50705" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50705"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1715.htm" class="c50705" title="关于开好基层党支部专题组织生活会和开展民主评议党员工作的通知（燕大群组办字[2014]18号）" target="_blank">
+        关于开好基层党...
+        </a>
+        
+        
+        <span class="clickstyle50705">&nbsp;&nbsp;(点击：<span id="nu41715" name="nu41715"></span>)</span>
+        <span valign="middle" class="timestyle50705" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50705"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1766.htm" class="c50705" title="关于对学校领导班子党的群众路线教育实践活动“两方案一计划一清单”进行公示的通知" target="_blank">
+        关于对学校领导...
+        </a>
+        
+        
+        <span class="clickstyle50705">&nbsp;&nbsp;(点击：<span id="nu41766" name="nu41766"></span>)</span>
+        <span valign="middle" class="timestyle50705" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50705"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1761.htm" class="c50705" title="关于做好各中层单位领导班子“两方案一计划一清单”及党员领导干部“一措施一清单”制定、审核等有关事项的通知（燕大群组办字[2014]22号）" target="_blank">
+        关于做好各中层...
+        </a>
+        
+        
+        <span class="clickstyle50705">&nbsp;&nbsp;(点击：<span id="nu41761" name="nu41761"></span>)</span>
+        <span valign="middle" class="timestyle50705" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50705"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1005/1474.htm" class="c50705" title="孔令富副校长到经济管理学院对党的群众路线教育实践活动开展调研" target="_blank">
+        孔令富副校长到...
+        </a>
+        
+        
+        <span class="clickstyle50705">&nbsp;&nbsp;(点击：<span id="nu41474" name="nu41474"></span>)</span>
+        <span valign="middle" class="timestyle50705" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont50705"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1007/1604.htm" class="c50705" title="“以考促学”活动考试内容" target="_blank">
+        “以考促学”活...
+        </a>
+        
+        
+        <span class="clickstyle50705">&nbsp;&nbsp;(点击：<span id="nu41604" name="nu41604"></span>)</span>
+        <span valign="middle" class="timestyle50705" width="1%" nowrap></span>
+            </td>
+        </tr><script language="javascript" src="../../system/resource/js/ajax.js"></script><script language="javascript">_getBatchClickTimes('1608,1704,1698,1732,1803,1715,1766,1761,1474,1604',1035081666,'wbnews','u4')</script>
+</table><!--#endeditable--></div></dd></dl></div></div><!-- /pright --></div><br class="clear">
+<div class="footer"><!-- /powered -->
+<div class="copyright" style="height: 50px"><!--#begineditable name="版权" viewid="50695"--><P>Copyright © 2014 燕山大学党的群众路线教育实践活动领导小组办公室 All Rights Reserved. </P>
+<P>地址：燕山大学世纪楼第2008室 E-Mail: <A href="mailto:qzlx@ysu.edu.cn">qzlx@ysu.edu.cn</A> TEL:8057060</P>
+<P>开发与技术支持：<IMG src="../../images/yit2.png">燕山大学信息化处</P><!--#endeditable--></div></div><!-- /footer -->
+
+</body></html>

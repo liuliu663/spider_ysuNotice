@@ -1,7 +1,542 @@
-function (selector, context, r, opts) {
-    if (!(this instanceof initialize)) {
-      return new initialize(selector, context, r, opts);
-    }
-    opts = _.defaults(opts || {}, options);
-    return Cheerio.call(this, selector, context, r || root, opts);
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><html:base/>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<title>��ɽ��ѧ��ѧ�����о�Ժ</title>
+<META Name="keywords" Content="���й���ϵͳ,�������������Ƽ��������ι�˾,��У���й���ϵͳ,ʡ�����й���ϵͳ,���л�������ϵͳ,����Ժ�ۺϹ���ƽ̨,�������й���,ʡ������">
+<META Name="description" Content="���������Ƽ���������������ͳ�ƹ����ν������ܵĿ��й�����Ϣ��ƽ̨
+��Ӧ��,��У���й���ϵͳ������������У�ճ��Ŀ��й�����Ҫ,���ֿ����벿����ʡ�����漰��������ϵͳ�Ľӿ�,���ո���У�����������ж��ƿ���,ʡ�����й���ϵͳ�����Ը�ʡ���У��������й������Ž��п����ۺϹ�������Ϣ�����������Ľ���ƽ̨">
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #C20605;
+}
+.STYLE3 {
+	color: #333333;
+	font-weight: bold;
+	font-size: 14px;
+}
+-->
+</style>
+<script language="javascript">
+function showimg(s){
+//alert(s);
+document.getElementById("AD_Table"+s).style.display="";
+for(i=1;i<5;i++)
+{    
+     if(i==s)
+	 {
+          continue;
+     }
+          document.getElementById("AD_Table"+i).style.display="none";
+}
+
+switch(s)
+{
+case "1":
+     document.getElementById("selbut1").src="images/index25-1.jpg";
+     document.getElementById("selbut2").src="images/index25-2.jpg";
+     document.getElementById("selbut3").src="images/index25-3.jpg";
+	 document.getElementById("selbut4").src="images/index25-4.jpg";
+     break;
+case "2":
+      document.getElementById("selbut1").src="images/index25-1-.jpg";
+      document.getElementById("selbut2").src="images/index25-2-.jpg";
+      document.getElementById("selbut3").src="images/index25-3.jpg";
+	  document.getElementById("selbut4").src="images/index25-4.jpg";
+      break;
+case "3":
+      document.getElementById("selbut1").src="images/index25-1-.jpg";
+      document.getElementById("selbut2").src="images/index25-2.jpg";
+      document.getElementById("selbut3").src="images/index25-3-.jpg";
+	  document.getElementById("selbut4").src="images/index25-4.jpg";
+      break;
+    
+case "4":
+      document.getElementById("selbut1").src="images/index25-1-.jpg";
+      document.getElementById("selbut2").src="images/index25-2.jpg";
+      document.getElementById("selbut3").src="images/index25-3.jpg";
+	  document.getElementById("selbut4").src="images/index25-4-.jpg";
+      break;
+
+ }
+  
+}
+
+function showimg2(s){
+//alert(s);
+document.getElementById("AD_Table"+s).style.display="";
+for(i=5;i<10;i++)
+{    
+     if(i==s)
+	 {
+          continue;
+     }
+          document.getElementById("AD_Table"+i).style.display="none";
+}
+
+switch(s)
+{
+case "5":
+      
+      document.getElementById("selbut5").src="images/2ji-59.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "6":
+      
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60-.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "7":
+      
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61-.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "8":
+      
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62-.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "9":
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63-.jpg";
+	  break;
+ }
+  
+}
+</script>
+</head>
+<body class="body">
+
+
+
+
+
+
+
+
+
+
+
+
+<script Language="JavaScript" src="../../script/MD5.js"></script>
+<link rel="icon" href="/images/cnu.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/cnu.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style_home.css" rel="stylesheet" type="text/css">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="../Scripts/rss.js" type="text/javascript"></script>
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+
+<div id="home_banner" style="background:url(images/top2_banner.jpg) no-repeat"></div>
+<div align="center" id="menu_bk">
+  <div id="menu"> 
+     <li ><a href="mainPageIndex.do" hidefocus="hidefocus">��ҳ</a></li> 
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=1" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=2" hidefocus="hidefocus">�Ƽ��ƻ�</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=3" hidefocus="hidefocus">�Ƽ�����</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=4" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=5" hidefocus="hidefocus">�ɹ�����</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=6" hidefocus="hidefocus">֪ʶ��Ȩ</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=7" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=8" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=9" hidefocus="hidefocus">������ϵ</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=10" hidefocus="hidefocus">����ר��</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=328" hidefocus="hidefocus">ѧ�罨��</a></li>
+     
+  </div>
+ <div id="u_menu">&nbsp;</div>
+ </div>
+
+ <div id="white">
+   <div id="LanMu_name">
+     <div style="float:left"><img src="images/upload/tzgg.jpg"  width="183" height="100"></div>
+     <div style="float:right; text-align:right;">
+       <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','732','height','105','src','flash/img','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','flash/img' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="732" height="105">
+         <param name="movie" value="flash/img.swf">
+         <param name="quality" value="high">
+         <embed src="flash/img.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="732" height="105"></embed>
+       </object>
+     </noscript></div>
+   </div>
+     
+ 
+<!--����-->
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="/images/cnu.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/cnu.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style_home.css" rel="stylesheet" type="text/css">
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="Scripts/rss.js" type="text/javascript"></script>
+<script Language="JavaScript" src="../../script/MD5.js"></script>
+
+
+
+<div id="white">
+
+   <div id="LanMu_content">
+     <div id="LanMu_menu">
+<style type="text/css">
+<!--
+/**{margin:0;padding:0;border:0;}*/
+#nav {
+	width:163px;
+	line-height: 32px;
+	list-style-type: none;
+	text-align:left;
+}
+/*==================һ��Ŀ¼===================*/
+#nav a {
+	width: 147px;
+	display: block;
+	padding-left:15px; /*Width(һ��Ҫ)������������Li������*/
+	height: 25px;
+	line-height:12px;
+	padding-top:7px;
+}
+#nav li {
+	float:left;
+	background:url(images/branch/Menu_L_bk.gif) no-repeat;
+}
+#nav li a:hover{
+	background: url(images/branch/Menu_L_bk_over.gif) no-repeat;
+}
+#nav li a:active {
+	background: url(images/branch/Menu_L_bk_down.gif) no-repeat;
+}
+
+#nav a:link  {
+ color:#000000; text-decoration:none;
+}
+#nav a:visited  {
+ color:#000000;text-decoration:none;
+}
+#nav a:hover  {
+ color:#ffffff;text-decoration:unbderline;}
+#nav a:active  {
+ color:#ffffff;text-decoration:unbderline;}
+/*==================����Ŀ¼===================*/
+#nav li ul {
+ list-style:none;
+ text-align:left;
+}
+#nav li ul li{
+	
+}
+#nav li ul a{
+	padding-left:25px;
+	width:137px; /* padding-left����Ŀ¼�����������ƶ�����Width������������=(�ܿ���-padding-left)*/
+}
+/*�����Ƕ���Ŀ¼��������ʽ*/
+#nav li ul a:link  {
+	text-decoration:none;
+	background: url(images/branch/Menu_Lb.gif) no-repeat;
+}
+#nav li ul a:visited  {
+	background: url(images/branch/Menu_Lb.gif) no-repeat;
+	text-decoration:none;
+}
+#nav li ul a:hover {
+	color:#000000;
+	text-decoration:none;
+	font-weight:normal;
+	background: url(images/branch/Menu_Lb_over.gif) no-repeat; 
+}
+#nav li ul a:active {
+	color:#000000;
+	text-decoration:none;
+	font-weight:normal;
+	background-: url(images/branch/Menu_Lb_down.gif) no-repeat; 
+}
+/*==============================*/
+#nav li:hover ul {
+ left: auto;
+}
+#nav li.sfhover ul {
+ left: auto;
+}
+#content {
+ clear: left; 
+}
+#nav ul.collapsed {
+ display: none;
+}
+
+#PARENT{
+	width:163px;
+	margin: 0px 10px 50px 10px;
+}
+-->
+</style>
+
+<div id="PARENT">
+<ul id="nav">
+    
+    <li ><a href="mainPageIndex.do?actionType=initArticle&columnId=12&currentColumn.id=76" hidefocus="hidefocus" >֪ͨ����</a></a>
+	
+    </li>
+     
+</ul>
+</div>
+
+<script type=text/javascript><!--
+var LastLeftID = "";
+function menuFix() {
+ var obj = document.getElementById("nav").getElementsByTagName("li");
+ for (var i=0; i<obj.length; i++) {
+  obj[i].onmouseover=function() {
+   this.className+=(this.className.length>0? " ": "") + "sfhover";
   }
+  obj[i].onMouseDown=function() {
+   this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  obj[i].onMouseUp=function() {
+   this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  obj[i].onmouseout=function() {
+   this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
+  }
+ }
+}
+function DoMenu(emid)
+{
+ if(emid=="null") {return;}
+ var obj = document.getElementById(emid); 
+ obj.className = (obj.className.toLowerCase() == "expanded"?"collapsed":"expanded");
+ if((LastLeftID!="")&&(emid!=LastLeftID)) //�ر���һ��Menu
+ {
+  document.getElementById(LastLeftID).className = "collapsed";
+ }
+ LastLeftID = emid;
+}
+function GetMenuID()
+{
+ var MenuID="";
+ var _paramStr = new String(window.location.href);
+ var _sharpPos = _paramStr.indexOf("#");
+ 
+ if (_sharpPos >= 0 && _sharpPos < _paramStr.length - 1)
+ {
+  _paramStr = _paramStr.substring(_sharpPos + 1, _paramStr.length);
+ }
+ else
+ {
+  _paramStr = "";
+ }
+ 
+ if (_paramStr.length > 0)
+ {
+  var _paramArr = _paramStr.split("&");
+  if (_paramArr.length>0)
+  {
+   var _paramKeyVal = _paramArr[0].split("=");
+   if (_paramKeyVal.length>0)
+   {
+    MenuID = _paramKeyVal[1];
+   }
+  }
+  /*
+  if (_paramArr.length>0)
+  {
+   var _arr = new Array(_paramArr.length);
+  }
+  //ȡ����#�����ģ��˵�ֻ���õ�Menu
+  //for (var i = 0; i < _paramArr.length; i++)
+  {
+   var _paramKeyVal = _paramArr[i].split('=');
+   
+   if (_paramKeyVal.length>0)
+   {
+    _arr[_paramKeyVal[0]] = _paramKeyVal[1];
+   }  
+  }
+  */
+ }
+ 
+ if(MenuID!="")
+ {
+  DoMenu(MenuID)
+ }
+}
+GetMenuID(); //*������function��˳��Ҫע��һ�£���Ȼ��Firefox��GetMenuID()����Ч��
+menuFix();
+--></script>
+     </div>
+
+<!--�м�-->
+
+
+
+
+
+
+
+
+
+<SCRIPT language=javascript>
+var docBody=null;
+function zoomDoc(size){
+	if(!docBody){
+		return;
+	}
+	
+	docBody.style.fontSize = size + 'px';
+	var __childs = docBody.childNodes;
+	for(var i=0;i<__childs.length;i++)
+	{
+		if(__childs[i].nodeType==1)
+		{
+			__childs[i].style.fontSize=size + 'px';
+		}
+	}
+}
+
+function init()
+{
+	docBody=document.getElementById('artical_real');
+}
+window.onload=init;
+</SCRIPT>
+
+<div id="LanMu_rightarea">
+      <div id="guide">
+         <img src="images/branch/guide.gif" width="24" height="22" align="absmiddle"><a href="mainPageIndex.do">��ҳ</a>
+          &gt; <a href="mainPageIndex.do?actionType=initColumn&columnId=12">֪ͨ����</a>   &gt; <a href="mainPageIndex.do?actionType=initArticle&columnId=12&currentColumn.id=76">֪ͨ����</a>       </div>
+       <div id="search_at_branch"></div>      
+     
+       <div id="Curent_name">
+         <div style="float:left"><img src="images/branch/open_column.gif" width="31" height="27"></div>
+         <div id="Current_title" style="float:left">֪ͨ����</div>
+         <div style="float:right"><img src="images/branch/open_column_r.gif" width="7" height="27"></div>
+       </div>
+         
+       <div id="content">
+         <div align="center" id="title">
+         	
+			<span class="t16yh"><b>�����ύ2015��������Ȼ��ѧ������Ŀ��չ������֪ͨ</b></span><br>
+			
+			<span class="date">2015-12-16</span>&nbsp;&nbsp; <span class="text_gray">[<a href="javascript:zoomDoc(16);">��</a>] [<a href="javascript:zoomDoc(14);">��</a>] [<a href="javascript:zoomDoc(12);">С</a>]</span>
+			&nbsp;&nbsp;<span class="date">���� 1604 ��</span>
+		 </div>
+
+<div id="artical_real">
+
+	<P><p><span style="line-height: 250%; font-family: ����; font-size: 12px;">������ѧԺ����ʦ��</span></p><p style="margin: 16px 0px 0px; line-height: 250%; text-indent: 24px;"><span style="line-height: 250%; font-family: ����; font-size: 12px;">������Ȼ��ѧ����ίĿǰ�ѷ����ˡ�����2016���ȹ�����Ȼ��ѧ������Ŀ�������������й�������ͨ�桷��Ϊ������У2015��������Ȼ��ѧ������Ŀ��չ�������ύ�������ֽ��й�����֪ͨ���£�</span></p><p style="margin: 16px 0px 0px; line-height: 250%; text-indent: 24px;"><span style="line-height: 250%; font-family: ����; font-size: 12px;">1.</span><span style="line-height: 250%; font-family: ����; font-size: 12px;">��Ŀ������ʹ��ԭ�е��û�����������¼��Ϣϵͳ����Ҫ������׫д��������Ȼ��ѧ����������Ŀ��չ���桷����<strong>1��10��</strong>ǰ���ɽ�չ��������д���ύ��<strong><span style="color: red;">�����ύֽ�ʲ���</span></strong>��</span><span style="line-height: 250%; font-family: ����; font-size: 12px;">��չ�����ɹ�ֻ��д2015���»��õĳɹ�����������д���ĳɹ������ظ�¼�룬<strong>�벻Ҫ����������δ��ע������Ȼ��ѧ������������Ŀ��׼�ŵ��������뱨���ɹ��С�</strong>2015������������Ŀ����д��չ���档</span></p><p style="margin: 16px 0px 0px; line-height: 250%; text-indent: 24px;"><span style="line-height: 250%; font-family: ����; font-size: 12px;">�����ύ�����޸ĵı��棬�뼰ʱ��֪��ѧ�����о�Ժ�����˻ء���δ���涨�ύ��չ�����ģ�������Ȼ��ѧ����ί�����йع涨������</span></p><p style="margin: 16px 0px 0px; line-height: 250%; text-indent: 24px;"><span style="line-height: 250%; font-family: ����; font-size: 12px;">2.</span><span style="line-height: 250%; font-family: ����; font-size: 12px;">ѧԺ��<strong>1��12��</strong>ǰ��֯ר�ҶԱ�ѧԺ�ύ�Ľ�չ��������ѧ�����飨������ʽ��ѧԺ���а��ţ���</span><span style="line-height: 250%; font-family: ����; font-size: 12px;">��ѧ�����о�Ժͬʱ��ISISϵͳ�н�����ʽ���顣</span><span style="line-height: 250%; font-family: ����; font-size: 12px;">ѧԺ����ѧ��������������д��</span><span style="line-height: 250%; font-family: ����; font-size: 12px;">2015</span><span style="line-height: 250%; font-family: ����; font-size: 12px;">��������Ȼ��ѧ������Ŀ��չ����ѧ�������������ܱ�</span><span style="line-height: 250%; font-family: ����; font-size: 12px;">��������1����ǩ�ָ��º��ͽ���ѧ�����о�Ժ1001�칫�ң����Ӱ淢����<a href="mailto:kyk@ysu.edu.cn">kyk@ysu.edu.cn</a>���䡣</span></p><p style="margin: 16px 0px 0px; line-height: 250%; text-indent: 24px;"><span style="line-height: 250%; font-family: ����; font-size: 12px;">3.</span><span style="line-height: 250%; font-family: ����; font-size: 12px;">��ѧ�����о�Ժ��<strong>2016��1��15��ǰ</strong>����ISISϵͳ�н�չ����������������ȷ�ϡ�</span></p><p style="margin: 10px 0px; line-height: 150%; text-indent: 24px;"><span style="line-height: 150%; font-family: ����; font-size: 12px;">&nbsp;</span></p><p style="margin: 10px 0px; text-align: right; line-height: 150%; text-indent: 24px;"><span style="line-height: 150%; font-family: ����; font-size: 12px;">��ѧ�����о�Ժ<br/> 2015��12��16��</span></p><p><span style="line-height: 150%; font-family: ����; font-size: 12px;"></span>&nbsp;</p><p>&nbsp;</p></P>	
+	
+	<!-- ����Ϊ���ݣ�һ��Ϊ���� -->
+	
+	
+		<b>��������:</b>
+		
+			<div id="f_0" name="33970|����1-2015��������Ȼ��ѧ������Ŀ��չ����ѧ�������������ܱ�.xls"><a href="download.download?id=33970" target="_blank"><font color="red">����1-2015��������Ȼ��ѧ������Ŀ��չ����ѧ�������������ܱ�.xls</font></a></div> 
+		
+	
+	
+</div>
+<!-- ΢�ŷ�������ֻ���Է�����֪ͨ���桱��������̬�����Ƽ���̬(�Ƽ���Ϣ)��������Ŀ
+	��������Ŀ���ֱ�������names�е���Ŀ����
+ -->
+<!-- �������·�����΢�ŵĹ��� -->
+
+<!-- <div class="fenxiang">
+	<div class="bshare-custom icon-medium-plus">
+		<a title="������" href="http://www.bShare.cn/" id="bshare-shareto" class="bshare-more">������</a>
+		<a title="������΢��"  class="bshare-weixin"></a>
+	</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+<a class="bshareDiv" onclick="javascript:return false;"></a>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>	
+</div>
+ -->
+<div class="bshare-custom">
+<div class="bsPromo bsPromo2"></div>
+	<a title="����ƽ̨" class="bshare-more bshare-more-icon more-style-addthis"></a>
+	<a title="������QQ�ռ�" class="bshare-qzone"></a>
+	<a title="����������΢��" class="bshare-sinaminiblog"></a>
+	<a title="��������Ѷ΢��" class="bshare-qqmb"></a>
+	<a title="������������" class="bshare-renren"></a>
+	<a title="������΢��" class="bshare-weixin" href="javascript:void(0);"></a>
+</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+
+
+<div class="quotes">
+  </div>
+       <div id="boot"></div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+  
+
+<script Language="JavaScript" src="../../script/MD5.js"></script>
+<link rel="icon" href="/images/cnu.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/cnu.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style_home.css" rel="stylesheet" type="text/css">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="../Scripts/rss.js" type="text/javascript"></script>
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+
+
+<div id="copyright">  
+	  <div class="di"><font color="#FFFFFF" face="Tahoma, Verdana" class="bai">Copyright &copy;<a href="http://kjc.ysu.edu.cn/">��ɽ��ѧ��ѧ�����о�Ժ��Ȩ����</a><br>
+      <a href="http://www.e-plugger.com"><img src="images/ep.gif" border="0" /></a>&nbsp;����֧�֣��������������Ƽ��������޹�˾</font></div>
+      <div class="yjx"><a href="mainPageIndex.do?actionType=initIdea"><img src="images/yjx.gif" border="0" /></a></div>
+</div> 
+
+</body>
+</html>
+</body>
+</html>

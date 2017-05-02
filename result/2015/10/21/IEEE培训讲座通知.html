@@ -1,7 +1,396 @@
-function (selector, context, r, opts) {
-    if (!(this instanceof initialize)) {
-      return new initialize(selector, context, r, opts);
-    }
-    opts = _.defaults(opts || {}, options);
-    return Cheerio.call(this, selector, context, r || root, opts);
-  }
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><title>
+	燕山大学图书馆--新闻内容详情页面
+</title><link rel="shortcut icon" href="http://library.ysu.edu.cn/images/icon1.ico" type="image/x-icon" meida="screen" /><link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" /><link href="CSS/common.css" rel="stylesheet" type="text/css" />
+
+    <script src="http://202.206.242.99:8080/tpl/js/justgage.js" type="text/javascript"></script>
+    
+    <link href="CSS/css.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+    <!--
+        window.onload = window.onresize = function() {
+            if (document.getElementById("rightcontent").clientHeight < document.getElementById("navleft").clientHeight) {
+                document.getElementById("rightcontent").style.height = document.getElementById("navleft").offsetHeight + "px";
+            }
+            else {
+                document.getElementById("navleft").style.height = document.getElementById("rightcontent").offsetHeight + "px";
+            }
+        }
+-->
+    </script>
+
+
+
+    <script type="text/javascript">
+        function changeStyle() {
+            document.getElementById("login").style.display = none;
+            document.getElementById("login1").style.display = block;
+            alert("hanshu zhixing");
+        }
+        function turnoff(obj) {
+            document.getElementById(obj).style.display = "none";
+            document.getElementById("ct100_welDiv").style.display = "block";
+
+        }
+    </script>
+
+    <style type="text/css">
+        .style1
+        {
+            width: 15%;
+        }
+        .style2
+        {
+            width: 16%;
+        }
+        .style3
+        {
+            width: 13%;
+        }
+        .style4
+        {
+            width: 416px;
+        }
+        .style5
+        {
+            width: 56px;
+        }
+        .style6
+        {
+            width: 15%;
+            height: 20px;
+        }
+        .style7
+        {
+            width: 416px;
+            height: 20px;
+        }
+        .style8
+        {
+            width: 16%;
+            height: 20px;
+        }
+        .style9
+        {
+            width: 13%;
+            height: 20px;
+        }
+        .style10
+        {
+            width: 56px;
+            height: 20px;
+        }
+        .style11
+        {
+            height: 20px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?645c01cc64065559914b6344846ac56a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+//      判断验证码回车操作
+//        document.onkeydown = function() { 
+//            var s = document.activeElement.id;    //  获取当前焦点所在的元素ID
+//            if ("captcha" == s) {
+//                if (event.keyCode == 13) {
+//                    document.getElementById("ct100_welDiv").style.display = "block";
+//                    document.getElementById("ct100_logDiv").style.display = "none";
+//                    document.getElementById("loginSubmit").click();
+//                    event.returnValue = false;
+//                }
+//            }            
+//        }
+</script>
+
+</head>
+<body style="background-color: #ffffff;">
+    <!-- 顶部 -->
+    <div id="top" style="background-color: #FFFFFF;">
+        <!-- logo图片 -->
+        <!--<img src="images/logo.jpg" /> -->
+        <!-- 登录我的图书馆 -->
+        <div id="ctl00_login" class="login" style="display: block;">
+            <form name="login" action="middle.aspx" method="post" target="_parent">
+            <table width="1100px" style="background-image: url(images/banner5.jpg);
+                background-repeat: no-repeat; background-size: 100% 100%; vertical-align: bottom;
+                background-color: #f9f7f6;">
+                <tr>
+                    <td style="height: 70px; width: 280px;">
+                    </td>
+                    <td id="Td2" align="left" width="340px">
+                    </td>
+                    <td id="Td3" width="190px">
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                       
+                    </td>
+                </tr>
+                <tr style="vertical-align: middle; height:30px;">
+                    <td width="280px">
+                    </td>
+                    <td id="day" align="center" width="340px" style="text-align: center">
+                        <a href="http://jwc.ysu.edu.cn/xiaoli.asp" target="_blank"><span id="ctl00_date">今天是2017年5月2日，星期二    教学周第<font color='#d20c43' style='font-weight:bold;'>10</font>周</span></a>
+                    </td>
+                    <td id="numTD" style="text-align: left" width="190px">
+                        一卡通号<input id="userName" name="number" type="text" class="log" />
+                    </td>
+                    <td id="pswTD" style="text-align: right" width="140px">
+                        密码<input id="psw" name="passwd" type="password" class="log" />&nbsp;
+                    </td>
+                    <td id="subTD" style="text-align: left;" width="150px">
+                        <input id="submit" type="submit" value="登录" style="height: 22px; color: White; background-color: #d20c43;
+                            border: none; width: 44px; font-family: 黑体; font-size: 13.6px;" />
+			<a href="http://202.206.242.99:8080/reader/get_pwd.php" target="_blank"><input id="reset" type="button" value="密码重置" style="height: 22px; color: White; background-color: #76777a;
+                            border: none; width: 70px; font-family: 黑体; font-size: 13.6px;" /></a>
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        <div id="ctl00_login1" class="login" style="display: none;">
+            <table width="1100" style="background-image: url(images/banner5.jpg);
+                background-repeat: no-repeat;">
+                <tr style="height: 70px;">
+                    <td width="380px">
+                    </td>
+                    <td width="400px" id="Td6">
+                    </td>
+                    <td width="180px" id="Td9">
+                    </td>
+                    <td width="160px" id="Td8">
+                    </td>
+                    <td>
+                        <a href="http://202.206.242.30:8080" style="text-decoration: underline; font-family: 黑体;"
+                            target="_blank">旧版入口</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="380px">
+                    </td>
+                    <td width="400px" id="day1" style="text-align: center">
+                        <a href="http://jwc.ysu.edu.cn/xiaoli.asp" target="_blank"><span id="ctl00_date1"></span></a>
+                    </td>
+                    <div id="ctl00_welDiv">
+                    <td width="180px" id="wel" align="right">
+                        <span id="ctl00_welcome"></span>
+                    </td>
+                    <td width="160px" align="center">
+                    <form name="logform" action="testMiddle.aspx" target="_parent" method="post">
+                    <input type="submit" value="我的图书馆" style="height: 22px; color: Black;
+                            border: none; width: 100px; font-family: 黑体; font-size: 13.6px; background-color: #DDDDDD;" /></div>
+                    </form>
+                        <div id="ctl00_logDiv" class="logDiv" style="display:none;"><form name="frm_login" action="http://202.206.242.99:8080/reader/redr_verify.php" target="_blank"
+                        method="post">
+                        <div style="float:left">
+                        <input id="number" name="number" type="hidden" value='' />
+                        <input id="select" type="hidden" name="select" value="cert_no" />
+                        <input type="hidden" name="select1" value="bar_no" />
+                        <input id="returnUrl" type="hidden" name="returnUrl" value="" />
+                        <input id="passwd" name="passwd" type="hidden" value="" />  
+                        请输入验证码：
+                        <input id="captcha" name="captcha" type="text" size="20" style="width:80px;height:20px; line-height:20px;" tabindex="输入验证码" placeholder="输入4位数字验证码">  
+                        <img height="28"  title="点击刷新" src="http://202.206.242.99:8080/reader/captcha.php" align="absbottom" onclick="this.src='http://202.119.47.33:81/reader/captcha.php?'+Math.random();" />
+                                          
+                        <input id="loginSubmit" type="submit" value="确定" onclick="turnoff('ctl00_logDiv')" style="height: 26px; color: Black;
+                            border: none; width: 50px; font-family: 黑体; font-size: 13.6px; background-color: #DDDDDD;" />
+                        </div>
+                        <div style="float:left; vertical-align:top; line-height:1; text-align:center; color:Red; padding-left:5px;  ">                        
+                     <a href="#" onclick="turnoff('ctl00_logDiv')">×</a>
+                        </div>
+                             
+                            </form>
+                        </div>
+                        
+ 	 
+
+                            
+                    </td>
+                    <td width="80px" id="Td1" style="">
+                        <form name="logout" action="middle.aspx" method="post" target="_parent">
+                        <input type="submit" value="退出" style="color: White; border: none; width: 44px; font-family: 黑体;
+                            font-size: 13.6px; background-color: #d20c43; height: 22px;" />
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- 导航栏 -->
+        <div id="nav">
+            <div class="login">
+                <table border="0" cellpadding="0" cellspacing="0" style="height: 26px; vertical-align: top">
+	<tr>
+		<td width="220px">
+                        </td>
+		<td id="ctl00_sy" width="140px" align="center">
+                            <a href="index.aspx" target="_parent">首&nbsp;&nbsp;&nbsp;页</a>
+                        </td>
+		<td id="ctl00_zy" width="140px" align="center">
+                            <a href="source.aspx" target="_parent">资&nbsp;&nbsp;&nbsp;源</a>
+                        </td>
+		<td id="ctl00_fw" width="140px" align="center">
+                            <a href="service.aspx" target="_parent">服&nbsp;&nbsp;&nbsp;务</a>
+                        </td>
+		<td id="ctl00_gk" width="140px" align="center">
+                            <a href="overview.aspx" target="_parent">概&nbsp;&nbsp;&nbsp;况</a>
+                        </td>
+		<td width="160px" align="center">
+                            <a href="http://202.206.242.51/lres" target="_blank">读者教育系统</a>
+                        </td>
+		<td width="160px" align="center">
+                            <a href="http://202.206.242.41:8081" target="_blank">政治学习网站</a>
+                        </td>
+	</tr>
+</table>
+
+            </div>
+        </div>
+    </div>
+    <form name="aspnetForm" method="post" action="content.aspx?id=1174&amp;caid=2" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTYwMTYzMzcwOQ9kFgJmD2QWBAIDD2QWAgIBDw8WAh4EVGV4dAVw5LuK5aSp5pivMjAxN+W5tDXmnIgy5pel77yM5pif5pyf5LqMICAgIOaVmeWtpuWRqOesrDxmb250IGNvbG9yPScjZDIwYzQzJyBzdHlsZT0nZm9udC13ZWlnaHQ6Ym9sZDsnPjEwPC9mb250PuWRqGRkAgkPZBYCAgEPZBYKAgEPDxYCHwAFQzxhIGhyZWY9J25ld3NsaXN0LmFzcHg/Y2FpZD0yJz7otYTmupDliqjmgIE8L2E+Pj7otYTmupDliqjmgIHlhoXlrrlkZAIDDw8WAh8ABRZJRUVF5Z+56K6t6K6y5bqn6YCa55+lZGQCBQ8PFgIfAAUTMjAxNS8xMC8yMCAxMToxMToyNWRkAgcPDxYCHwAFBDE3MDNkZAIJDw8WAh8ABYcRPHA+PHN0cm9uZz48c3BhbiBzdHlsZT0iY29sb3I6IzUwNTA1MCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNnB4Ij48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk66buR5L2TIj7ln7norq3kuLvpopjvvJpJRUVFIOaOouenmOS5i+aXhe+8mumrmOaViOaQnOe0ouS4juWtpuacr+aKleeovzxiciAvPg0K5Z+56K6t5pe26Ze077yaMjAxNeW5tDEw5pyIMjLml6XvvIzmmJ/mnJ/lm5vvvIzkuIvljYgzOjAwPGJyIC8+DQrln7norq3lnLDngrnvvJropb/moKHljLrnlLXmsJTppoZBMTAxPGJyIC8+DQrkuLvorrLvvJrpmYjkvJ/vvIhpR3JvdXDlhazlj7hJRUVF5Lqn5ZOB5Z+56K6t5biI77yJPC9zcGFuPjwvc3Bhbj48L3NwYW4+PC9zdHJvbmc+PC9wPg0KDQo8cD48c3BhbiBzdHlsZT0iY29sb3I6IzUwNTA1MCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNnB4Ij48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk66buR5L2TIj7pgJrov4fmraTmrKHln7norq3vvIzmgqjlsIbkuobop6PvvJo8YnIgLz4NCjEuIElFTCDmlbDmja7lupPmo4DntKLmioDlt6for6bop6M8YnIgLz4NCsKgIMKg5Yip55SoIElFTCDov5vooYzor77popjnoJTnqbY8YnIgLz4NCsKgIMKg5Yip55SoIElFTCDov5vooYzlrabnp5Hot5/ouKo8YnIgLz4NCsKgIMKg5b+r6YCf6I635Y+W55u45YWz5paH54yu5YWo5paHPGJyIC8+DQoyLiBJRUVFIOacn+WIiuS4juS8muiuruaKleeov+a1geeoi+ivpuinozxiciAvPg0KwqAgwqBJRUVFIOacn+WIiuS8muiuruaKleeov+a1geeoi+S7i+e7jTxiciAvPg0KwqAgwqBJRUVFIOaKleeov+agvOW8j+WSjOazqOaEj+S6i+mhuTxiciAvPg0KMy4gSUVFRSDlrabmnK/noJTnqbbkuI7kuqTmtYHnjq/looPor6bop6M8YnIgLz4NCsKgIMKgSUVFRSDkvJrlkZjnlLPor7fkuI7mnYPnm4rvvIjlrabnlJ/kvJrlkZjjgIHpq5jnuqfkvJrlkZjvvIk8YnIgLz4NCsKgIMKgSUVFRSDlrabnlJ/lpZblrabph5Ev5Yqp5a2m6YeRL+S8muiuruaXheihjOaUr+aMgS9JRUVF56ue6LWb5LiO6K665paH5aSn6LWbPGJyIC8+DQrCoCDCoElFRUUg5YWN6LS5572R57uc5oqA5pyv6K6y5bqnPGJyIC8+DQrCoCDCoElFRUUg5qCH5YeG5byA5Y+R5rWB56iL5LiO5Y+C5LiO5pa55byPPC9zcGFuPjwvc3Bhbj48L3NwYW4+PC9wPg0KDQo8cD48c3BhbiBzdHlsZT0iY29sb3I6IzUwNTA1MCI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNnB4Ij48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk66buR5L2TIj7CoCDCoCDov5nmrKHln7norq3lsIbkuLrmgqjmj5DkvpvkuIDkuKrlhajpnaLkuobop6NJRUVF55qE5py65Lya77yM5LiA5Liq5LiOIElFRUUg55u05o6l5rKf6YCa55qE5qGl5qKB77yBSUVFRSDkuI3ku4XlsIbkvb/mgqjnmoTnp5HnoJTliJvmlrDlt6XkvZzmm7TliqDovbvmnb7pq5jmlYjvvIzmm7TkuLrmgqjmiZPlvIDnp5HmioDkuYvpl6jvvIzliJvpgKDkuIDkuKrkuI7kuJbnlYzlkIzooYzov5vooYzov5Hot53nprvkuqTmtYHnmoTmnLrkvJrvvIE8YnIgLz4NCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS08YnIgLz4NCklFRUXnroDku4s8YnIgLz4NCsKgIMKgIElFRUXvvIznlLXmsJTnlLXlrZDlt6XnqIvluIjlrabkvJrvvIzmmK/nm67liY3lhajnkIPmnIDlpKfnmoTmioDmnK/ooYzkuJrlrabkvJrjgILlhbbkvJrlkZjkurrmlbDotoXov4c0MOS4h+S6uu+8jOmBjeW4gzE2MOWkmuS4quWbveWutuOAguS9nOS4uiBJRUVFIOaXl+S4i+acgOWujOaVtOacgOadg+WogeeahOWcqOe6v+aVsOaNrui1hOa6kO+8jElFRUUvSUVUIEVsZWN0cm9uaWMgTGlicmFyeSDvvIjnroDnp7BJRUzvvInmj5DkvpvkuoblvZPku4rlhajkuJbnlYznlLXlrZDnlLXmsJTvvIzpgJrkv6HlkozorqHnrpfmnLrnp5HlrabnrYnpoobln5/lsIbov5HkuInliIbkuYvkuIDnmoTmlofnjK7jgILlhbbmlLblvZXnmoTmnJ/liIrvvIzmnYLlv5fvvIzkvJrorq7orrrmloflkozmoIflh4bmlofmoaPpq5jovr7kuInnmb7kvZnkuIfnr4fjgILnp43nsbvopobnm5bnlLXlrZDlt6XnqIvjgIHorqHnrpfmnLrlt6XnqIvjgIHnqbrpl7TmioDmnK/jgIHnlJ/nianlt6XnqIvnrYnlpJrkuKrlrabnp5Hpoobln5/jgII8L3NwYW4+PC9zcGFuPjwvc3Bhbj48L3A+DQpkZGQHND6rtoG5s3k6egCNsWgozKcTYA==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="65E7F3AF" />
+    <div id="main">
+        
+    <div id="main">
+        
+        <div id="rightcontent">
+            <div class="path">
+                <img src="images/2.gif" />当前位置：<span id="ctl00_ContentPlaceHolder1_newsType"><a href='newslist.aspx?caid=2'>资源动态</a>>>资源动态内容</span></div>
+            <!-- 新闻内容 -->
+            <div id="newscontent" class="commonfrm">
+                <h4>
+                    <span id="ctl00_ContentPlaceHolder1_lblTitle">IEEE培训讲座通知</span></h4>
+                <p class="con_time">
+                    发布时间：<span id="ctl00_ContentPlaceHolder1_lblCreateTime">2015/10/20 11:11:25</span>&nbsp;&nbsp;&nbsp;&nbsp;点击次数：<span id="ctl00_ContentPlaceHolder1_lblClickCount">1703</span></p>
+                <p class="newscon">
+                    <span id="ctl00_ContentPlaceHolder1_lblContent"><p><strong><span style="color:#505050"><span style="font-size:16px"><span style="font-family:黑体">培训主题：IEEE 探秘之旅：高效搜索与学术投稿<br />
+培训时间：2015年10月22日，星期四，下午3:00<br />
+培训地点：西校区电气馆A101<br />
+主讲：陈伟（iGroup公司IEEE产品培训师）</span></span></span></strong></p>
+
+<p><span style="color:#505050"><span style="font-size:16px"><span style="font-family:黑体">通过此次培训，您将了解：<br />
+1. IEL 数据库检索技巧详解<br />
+   利用 IEL 进行课题研究<br />
+   利用 IEL 进行学科跟踪<br />
+   快速获取相关文献全文<br />
+2. IEEE 期刊与会议投稿流程详解<br />
+   IEEE 期刊会议投稿流程介绍<br />
+   IEEE 投稿格式和注意事项<br />
+3. IEEE 学术研究与交流环境详解<br />
+   IEEE 会员申请与权益（学生会员、高级会员）<br />
+   IEEE 学生奖学金/助学金/会议旅行支持/IEEE竞赛与论文大赛<br />
+   IEEE 免费网络技术讲座<br />
+   IEEE 标准开发流程与参与方式</span></span></span></p>
+
+<p><span style="color:#505050"><span style="font-size:16px"><span style="font-family:黑体">    这次培训将为您提供一个全面了解IEEE的机会，一个与 IEEE 直接沟通的桥梁！IEEE 不仅将使您的科研创新工作更加轻松高效，更为您打开科技之门，创造一个与世界同行进行近距离交流的机会！<br />
+-------------------------------------------------------------------------------------------------------<br />
+IEEE简介<br />
+    IEEE，电气电子工程师学会，是目前全球最大的技术行业学会。其会员人数超过40万人，遍布160多个国家。作为 IEEE 旗下最完整最权威的在线数据资源，IEEE/IET Electronic Library （简称IEL）提供了当今全世界电子电气，通信和计算机科学等领域将近三分之一的文献。其收录的期刊，杂志，会议论文和标准文档高达三百余万篇。种类覆盖电子工程、计算机工程、空间技术、生物工程等多个学科领域。</span></span></span></p>
+</span></p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- 尾部 -->
+    <div id="footer">
+        <div style="background-color: #322e2d; width: 100%;">
+            <div class="login">
+                <table width="1100" cellpadding="0" cellspacing="0" style="background-color: #322e2d;
+                    height: 45px; text-align: center; vertical-align: middle;">
+                    <tr>
+                        <td width="8">
+                        </td>
+                        <td valign="bottom" width="10" align="right">
+                            <img style="display: block; cursor: hand" id="Img4" src="images/bottom_break.jpg"
+                                width="20" height="45" />
+                        </td>
+                        <td width="80">
+                            <a href="http://www.ysu.edu.cn/" target="_blank">燕山大学</a>
+                        </td>
+                        <td valign="bottom" width="10" align="right">
+                            <img style="display: block; cursor: hand" id="Img1" src="images/bottom_break.jpg"
+                                width="20" height="45" />
+                        </td>
+                        <td width="50">
+                            <a href="http://www.calis.edu.cn/" target="_blank">CALIS</a>
+                        </td>
+                        <td valign="bottom" width="10" align="right">
+                            <img style="display: block; cursor: hand" id="Img2" src="images/bottom_break.jpg"
+                                width="20" height="45" />
+                        </td>
+                        <td width="50">
+                            <a href="http://www.cadal.net/" target="_blank">CADAL</a>
+                        </td>
+                        <td valign="bottom" width="10" align="right">
+                            <img style="display: block; cursor: hand" id="Img3" src="images/bottom_break.jpg"
+                                width="20" height="45" />
+                        </td>
+                        <td width="50">
+                            <a href="http://www.nstl.gov.cn/" target="_blank">NSTL</a>
+                        </td>
+                        <td valign="bottom" width="10" align="right">
+                            <img style="display: block; cursor: hand" id="Img5" src="images/bottom_break.jpg"
+                                width="20" height="45" />
+                        </td>
+                        <td width="50">
+                            <a href="http://www.cashl.edu.cn/portal/index.jsp" target="_blank">CASHL</a>
+                        </td>
+                        <td valign="bottom" width="10" align="right">
+                            <img style="display: block; cursor: hand" id="Img6" src="images/bottom_break.jpg"
+                                width="20" height="45" />
+                        </td>
+                        <td width="180">
+                            <a href="http://www.cadlis.edu.cn/" target="_blank">中国高等教育数字图书馆</a>
+                        </td>
+                        <td valign="bottom" width="10" align="right">
+                            <img style="display: block; cursor: hand" id="Img7" src="images/bottom_break.jpg"
+                                width="20" height="45" />
+                        </td>
+                        <td width="120">
+                            <a href="http://www.nlc.gov.cn/" target="_blank">中国国家图书馆</a>
+                        </td>
+                        <td valign="bottom" width="10" align="right">
+                            <img style="display: block; cursor: hand" id="Img8" src="images/bottom_break.jpg"
+                                width="20" height="45" />
+                        </td>
+                        <td width="135">
+                            <a href="http://www.paper.edu.cn/" target="_blank">中国科技论文在线</a>
+                        </td>
+                        <td width="32">
+                            <img style="display: block; cursor: hand" id="Img9" src="images/bottom_break.jpg"
+                                width="20" height="45" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="background-color: #444444; width: 100%;">
+            <div class="login">
+                <table width="1100" cellpadding="0" cellspacing="0" style="background-color: #444444;
+                    height: 30px; color: White; font-size: 15px;">
+                    <tr>
+                        <td align="center" style="font-size: 13px; height: 30px;">
+                            燕山大学图书馆 &copy版权所有
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

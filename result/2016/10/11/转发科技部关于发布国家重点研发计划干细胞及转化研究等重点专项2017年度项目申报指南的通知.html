@@ -1,7 +1,537 @@
-function (selector, context, r, opts) {
-    if (!(this instanceof initialize)) {
-      return new initialize(selector, context, r, opts);
-    }
-    opts = _.defaults(opts || {}, options);
-    return Cheerio.call(this, selector, context, r || root, opts);
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><html:base/>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<title>��ɽ��ѧ��ѧ�����о�Ժ</title>
+<META Name="keywords" Content="���й���ϵͳ,�������������Ƽ��������ι�˾,��У���й���ϵͳ,ʡ�����й���ϵͳ,���л�������ϵͳ,����Ժ�ۺϹ���ƽ̨,�������й���,ʡ������">
+<META Name="description" Content="���������Ƽ���������������ͳ�ƹ����ν������ܵĿ��й�����Ϣ��ƽ̨
+��Ӧ��,��У���й���ϵͳ������������У�ճ��Ŀ��й�����Ҫ,���ֿ����벿����ʡ�����漰��������ϵͳ�Ľӿ�,���ո���У�����������ж��ƿ���,ʡ�����й���ϵͳ�����Ը�ʡ���У��������й������Ž��п����ۺϹ�������Ϣ�����������Ľ���ƽ̨">
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #C20605;
+}
+.STYLE3 {
+	color: #333333;
+	font-weight: bold;
+	font-size: 14px;
+}
+-->
+</style>
+<script language="javascript">
+function showimg(s){
+//alert(s);
+document.getElementById("AD_Table"+s).style.display="";
+for(i=1;i<5;i++)
+{    
+     if(i==s)
+	 {
+          continue;
+     }
+          document.getElementById("AD_Table"+i).style.display="none";
+}
+
+switch(s)
+{
+case "1":
+     document.getElementById("selbut1").src="images/index25-1.jpg";
+     document.getElementById("selbut2").src="images/index25-2.jpg";
+     document.getElementById("selbut3").src="images/index25-3.jpg";
+	 document.getElementById("selbut4").src="images/index25-4.jpg";
+     break;
+case "2":
+      document.getElementById("selbut1").src="images/index25-1-.jpg";
+      document.getElementById("selbut2").src="images/index25-2-.jpg";
+      document.getElementById("selbut3").src="images/index25-3.jpg";
+	  document.getElementById("selbut4").src="images/index25-4.jpg";
+      break;
+case "3":
+      document.getElementById("selbut1").src="images/index25-1-.jpg";
+      document.getElementById("selbut2").src="images/index25-2.jpg";
+      document.getElementById("selbut3").src="images/index25-3-.jpg";
+	  document.getElementById("selbut4").src="images/index25-4.jpg";
+      break;
+    
+case "4":
+      document.getElementById("selbut1").src="images/index25-1-.jpg";
+      document.getElementById("selbut2").src="images/index25-2.jpg";
+      document.getElementById("selbut3").src="images/index25-3.jpg";
+	  document.getElementById("selbut4").src="images/index25-4-.jpg";
+      break;
+
+ }
+  
+}
+
+function showimg2(s){
+//alert(s);
+document.getElementById("AD_Table"+s).style.display="";
+for(i=5;i<10;i++)
+{    
+     if(i==s)
+	 {
+          continue;
+     }
+          document.getElementById("AD_Table"+i).style.display="none";
+}
+
+switch(s)
+{
+case "5":
+      
+      document.getElementById("selbut5").src="images/2ji-59.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "6":
+      
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60-.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "7":
+      
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61-.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "8":
+      
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62-.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "9":
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63-.jpg";
+	  break;
+ }
+  
+}
+</script>
+</head>
+<body class="body">
+
+
+
+
+
+
+
+
+
+
+
+
+<script Language="JavaScript" src="../../script/MD5.js"></script>
+<link rel="icon" href="/images/cnu.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/cnu.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style_home.css" rel="stylesheet" type="text/css">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="../Scripts/rss.js" type="text/javascript"></script>
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+
+<div id="home_banner" style="background:url(images/top2_banner.jpg) no-repeat"></div>
+<div align="center" id="menu_bk">
+  <div id="menu"> 
+     <li ><a href="mainPageIndex.do" hidefocus="hidefocus">��ҳ</a></li> 
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=1" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=2" hidefocus="hidefocus">�Ƽ��ƻ�</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=3" hidefocus="hidefocus">�Ƽ�����</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=4" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=5" hidefocus="hidefocus">�ɹ�����</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=6" hidefocus="hidefocus">֪ʶ��Ȩ</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=7" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=8" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=9" hidefocus="hidefocus">������ϵ</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=10" hidefocus="hidefocus">����ר��</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=328" hidefocus="hidefocus">ѧ�罨��</a></li>
+     
+  </div>
+ <div id="u_menu">&nbsp;</div>
+ </div>
+
+ <div id="white">
+   <div id="LanMu_name">
+     <div style="float:left"><img src="images/upload/tzgg.jpg"  width="183" height="100"></div>
+     <div style="float:right; text-align:right;">
+       <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','732','height','105','src','flash/img','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','flash/img' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="732" height="105">
+         <param name="movie" value="flash/img.swf">
+         <param name="quality" value="high">
+         <embed src="flash/img.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="732" height="105"></embed>
+       </object>
+     </noscript></div>
+   </div>
+     
+ 
+<!--����-->
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="/images/cnu.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/cnu.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style_home.css" rel="stylesheet" type="text/css">
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="Scripts/rss.js" type="text/javascript"></script>
+<script Language="JavaScript" src="../../script/MD5.js"></script>
+
+
+
+<div id="white">
+
+   <div id="LanMu_content">
+     <div id="LanMu_menu">
+<style type="text/css">
+<!--
+/**{margin:0;padding:0;border:0;}*/
+#nav {
+	width:163px;
+	line-height: 32px;
+	list-style-type: none;
+	text-align:left;
+}
+/*==================һ��Ŀ¼===================*/
+#nav a {
+	width: 147px;
+	display: block;
+	padding-left:15px; /*Width(һ��Ҫ)������������Li������*/
+	height: 25px;
+	line-height:12px;
+	padding-top:7px;
+}
+#nav li {
+	float:left;
+	background:url(images/branch/Menu_L_bk.gif) no-repeat;
+}
+#nav li a:hover{
+	background: url(images/branch/Menu_L_bk_over.gif) no-repeat;
+}
+#nav li a:active {
+	background: url(images/branch/Menu_L_bk_down.gif) no-repeat;
+}
+
+#nav a:link  {
+ color:#000000; text-decoration:none;
+}
+#nav a:visited  {
+ color:#000000;text-decoration:none;
+}
+#nav a:hover  {
+ color:#ffffff;text-decoration:unbderline;}
+#nav a:active  {
+ color:#ffffff;text-decoration:unbderline;}
+/*==================����Ŀ¼===================*/
+#nav li ul {
+ list-style:none;
+ text-align:left;
+}
+#nav li ul li{
+	
+}
+#nav li ul a{
+	padding-left:25px;
+	width:137px; /* padding-left����Ŀ¼�����������ƶ�����Width������������=(�ܿ���-padding-left)*/
+}
+/*�����Ƕ���Ŀ¼��������ʽ*/
+#nav li ul a:link  {
+	text-decoration:none;
+	background: url(images/branch/Menu_Lb.gif) no-repeat;
+}
+#nav li ul a:visited  {
+	background: url(images/branch/Menu_Lb.gif) no-repeat;
+	text-decoration:none;
+}
+#nav li ul a:hover {
+	color:#000000;
+	text-decoration:none;
+	font-weight:normal;
+	background: url(images/branch/Menu_Lb_over.gif) no-repeat; 
+}
+#nav li ul a:active {
+	color:#000000;
+	text-decoration:none;
+	font-weight:normal;
+	background-: url(images/branch/Menu_Lb_down.gif) no-repeat; 
+}
+/*==============================*/
+#nav li:hover ul {
+ left: auto;
+}
+#nav li.sfhover ul {
+ left: auto;
+}
+#content {
+ clear: left; 
+}
+#nav ul.collapsed {
+ display: none;
+}
+
+#PARENT{
+	width:163px;
+	margin: 0px 10px 50px 10px;
+}
+-->
+</style>
+
+<div id="PARENT">
+<ul id="nav">
+    
+    <li ><a href="mainPageIndex.do?actionType=initArticle&columnId=12&currentColumn.id=76" hidefocus="hidefocus" >֪ͨ����</a></a>
+	
+    </li>
+     
+</ul>
+</div>
+
+<script type=text/javascript><!--
+var LastLeftID = "";
+function menuFix() {
+ var obj = document.getElementById("nav").getElementsByTagName("li");
+ for (var i=0; i<obj.length; i++) {
+  obj[i].onmouseover=function() {
+   this.className+=(this.className.length>0? " ": "") + "sfhover";
   }
+  obj[i].onMouseDown=function() {
+   this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  obj[i].onMouseUp=function() {
+   this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  obj[i].onmouseout=function() {
+   this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
+  }
+ }
+}
+function DoMenu(emid)
+{
+ if(emid=="null") {return;}
+ var obj = document.getElementById(emid); 
+ obj.className = (obj.className.toLowerCase() == "expanded"?"collapsed":"expanded");
+ if((LastLeftID!="")&&(emid!=LastLeftID)) //�ر���һ��Menu
+ {
+  document.getElementById(LastLeftID).className = "collapsed";
+ }
+ LastLeftID = emid;
+}
+function GetMenuID()
+{
+ var MenuID="";
+ var _paramStr = new String(window.location.href);
+ var _sharpPos = _paramStr.indexOf("#");
+ 
+ if (_sharpPos >= 0 && _sharpPos < _paramStr.length - 1)
+ {
+  _paramStr = _paramStr.substring(_sharpPos + 1, _paramStr.length);
+ }
+ else
+ {
+  _paramStr = "";
+ }
+ 
+ if (_paramStr.length > 0)
+ {
+  var _paramArr = _paramStr.split("&");
+  if (_paramArr.length>0)
+  {
+   var _paramKeyVal = _paramArr[0].split("=");
+   if (_paramKeyVal.length>0)
+   {
+    MenuID = _paramKeyVal[1];
+   }
+  }
+  /*
+  if (_paramArr.length>0)
+  {
+   var _arr = new Array(_paramArr.length);
+  }
+  //ȡ����#�����ģ��˵�ֻ���õ�Menu
+  //for (var i = 0; i < _paramArr.length; i++)
+  {
+   var _paramKeyVal = _paramArr[i].split('=');
+   
+   if (_paramKeyVal.length>0)
+   {
+    _arr[_paramKeyVal[0]] = _paramKeyVal[1];
+   }  
+  }
+  */
+ }
+ 
+ if(MenuID!="")
+ {
+  DoMenu(MenuID)
+ }
+}
+GetMenuID(); //*������function��˳��Ҫע��һ�£���Ȼ��Firefox��GetMenuID()����Ч��
+menuFix();
+--></script>
+     </div>
+
+<!--�м�-->
+
+
+
+
+
+
+
+
+
+<SCRIPT language=javascript>
+var docBody=null;
+function zoomDoc(size){
+	if(!docBody){
+		return;
+	}
+	
+	docBody.style.fontSize = size + 'px';
+	var __childs = docBody.childNodes;
+	for(var i=0;i<__childs.length;i++)
+	{
+		if(__childs[i].nodeType==1)
+		{
+			__childs[i].style.fontSize=size + 'px';
+		}
+	}
+}
+
+function init()
+{
+	docBody=document.getElementById('artical_real');
+}
+window.onload=init;
+</SCRIPT>
+
+<div id="LanMu_rightarea">
+      <div id="guide">
+         <img src="images/branch/guide.gif" width="24" height="22" align="absmiddle"><a href="mainPageIndex.do">��ҳ</a>
+          &gt; <a href="mainPageIndex.do?actionType=initColumn&columnId=12">֪ͨ����</a>   &gt; <a href="mainPageIndex.do?actionType=initArticle&columnId=12&currentColumn.id=76">֪ͨ����</a>       </div>
+       <div id="search_at_branch"></div>      
+     
+       <div id="Curent_name">
+         <div style="float:left"><img src="images/branch/open_column.gif" width="31" height="27"></div>
+         <div id="Current_title" style="float:left">֪ͨ����</div>
+         <div style="float:right"><img src="images/branch/open_column_r.gif" width="7" height="27"></div>
+       </div>
+         
+       <div id="content">
+         <div align="center" id="title">
+         	
+			<span class="t16yh"><b>ת���Ƽ������ڷ��������ص��з��ƻ���ϸ����ת���о����ص�ר��2017������Ŀ�걨ָ�ϵ�֪ͨ</b></span><br>
+			
+			<span class="date">2016-10-10</span>&nbsp;&nbsp; <span class="text_gray">[<a href="javascript:zoomDoc(16);">��</a>] [<a href="javascript:zoomDoc(14);">��</a>] [<a href="javascript:zoomDoc(12);">С</a>]</span>
+			&nbsp;&nbsp;<span class="date">���� 554 ��</span>
+		 </div>
+
+<div id="artical_real">
+
+	<P><p style="TEXT-ALIGN: center">&nbsp;���Ʒ��ʡ�2016��304��</p><p>��ʡ����������ֱϽ�м��ƻ������пƼ�����ί���֣����½������������ſƼ��֣�����Ժ���йز��ſƼ�����˾�֣����йص�λ��</p><p>&nbsp;&nbsp;&nbsp; ���ݹ���Ժӡ���ġ���������������Ƽ��ƻ���ר������ȣ������ĸ��ķ�����������[2014]64�ţ������岿�𣬰��չ����ص��з��ƻ���֯����������Ҫ�����ֽ�����ϸ����ת���о�����14���ص�ר��2017������Ŀ�걨ָ�����Թ�����������ָ��Ҫ����֯��Ŀ�걨�������й�����֪ͨ���¡�<br/><strong>&nbsp;&nbsp;&nbsp; һ����Ŀ��֯�걨Ҫ������������<br/></strong>&nbsp;&nbsp;&nbsp; 1. �걨��λ����ָ��֧�ַ������о���������Ŀ��ʽ��֯�걨����Ŀ���������񣨻����⣩����ĿӦ�����걨���븲����Ӧָ�Ϸ�����ȫ������ָ�ꡣ��Ŀ�걨��λ�Ƽ�1��������Ա��Ϊ��Ŀ�����ˣ�ÿ�����񣨻����⣩��1�������ˣ���Ŀ�����˿ɵ�������1�����񣨻����⣩�����ˡ�<br/>&nbsp;&nbsp;&nbsp; 2. ��Ŀ����֯ʵʩӦ���ϼ���ȫ���������������ƴ����Ŷӣ��۽��з����⣬ǿ�������о������Թؼ������з��͵���Ӧ��ʾ��������������ͳ���νӣ��������������Ϲ��ء�<br/>&nbsp;&nbsp;&nbsp; 3. �����ص��з��ƻ���Ŀ�걨������ȡ��дԤ�걨�顢��ʽ�걨���������У����幤���������£�<br/>&nbsp;&nbsp;&nbsp; ������Ŀ�걨��λ����ָ�������걨Ҫ����ͨ�����ҿƼ�������Ϣϵͳ��д���ύ3000�����ҵ���ĿԤ�걨�飬��ϸ˵���걨��Ŀ��Ŀ����ָ�꣬��Ҫ˵������˼·������·�ߺ��о���������Ŀ�걨��λ�����в��뵥λǩ�������걨Э�飬����ȷЭ��ǩ��ʱ�䣻��Ŀ�걨��λ����Ŀ������ǩ�����ų�ŵ�顣��ָ�Ϸ����յ�Ԥ�걨��������ֹ�ղ�����30�졣<br/>&nbsp;&nbsp;&nbsp; �������Ƽ���λ��ǿ�����Ƽ�����Ŀ�걨�������˰ѹأ���ʱ���Ƽ���Ŀͨ�����ҿƼ�������Ϣϵͳͳһ���͡�<br/>&nbsp;&nbsp;&nbsp; ����רҵ������������ĿԤ�걨������֯��ʽ���飬����չ��������������������������Ҫ��Ŀ�����˽��д��硣����ר�ҵ�������������ѡ��3-4�����������������걨��Ŀ��������һ���������󡣶���δ���������������걨��Ŀ����ʱ����������������Ŀ�걨��λ�͸����ˡ�<br/>&nbsp;&nbsp;&nbsp; �����걨��λ�ڽӵ�רҵ�������ڽ�������������֪ͨ����ͨ�����ҿƼ�������Ϣϵͳ��д���ύ��Ŀ��ʽ�걨�顣��ʽ�걨������ʱ��Ϊ30�졣<br/>&nbsp;&nbsp;&nbsp; ����רҵ�����Խ�����ʽ��������Ŀ�걨��������ʽ���飬����֯�����������걨��Ŀ�ĸ�����ͨ��������Ƶ���б������硣����ר���������������������֧��1-2����ָ�Ϸ��������걨��Ŀ����������ǰ��λ�����������Ҽ���·�����Բ�ͬ����ͬʱ����֧�֣���������̬�������ƣ����Ϲ��̹�����չ����������������������ȷ������֧�ַ�ʽ��<br/><strong>&nbsp;&nbsp;&nbsp; ������֯�걨���Ƽ���λ<br/></strong>&nbsp;&nbsp;&nbsp; 1. ����Ժ�йز��ſƼ�����˾�֣�<br/>&nbsp;&nbsp;&nbsp; 2. ��ʡ����������ֱϽ�С��ƻ������м��½������������ſƼ����ܲ��ţ�<br/>&nbsp;&nbsp;&nbsp; 3. ԭ��ҵ����ת�Ƴ�������ҵЭ�᣻<br/>&nbsp;&nbsp;&nbsp; 4. �����Ƽ����Ե㷶Χ����������ΪA���Ĳ�ҵ��������ս�����ˣ��Լ������Ƽ�������������չ�ĿƼ�����ҵ���·�չ��ҵ�Ե����ˡ�<br/>&nbsp;&nbsp;&nbsp; ���Ƽ���λӦ�ڱ���λְ�ܺ�ҵ����Χ���Ƽ����������Ƽ���Ŀ����ʵ�Եȸ��𡣹���Ժ�йز����Ƽ�������ҵ��ָ����ϵ�ĵ�λ����ҵЭ���Ͳ�ҵ��������ս�����ˡ��Ƽ�����ҵ���·�չ��ҵ�Ե������Ƽ�����Ա��λ��ʡ���Ƽ����ܲ����Ƽ������������ڵĵ�λ���Ƽ���λ�����ڹ��ҿƼ�������Ϣϵͳ��������ƽ̨�Ϲ���������<br/><strong>&nbsp;&nbsp;&nbsp; ���������ʸ�Ҫ��<br/></strong>&nbsp;&nbsp;&nbsp; 1. ǣͷ�걨��λ�Ͳ��뵥λӦΪ�й���½����ע���Ŀ���Ժ�����ߵ�ѧУ����ҵ�ȣ����ж��������ʸ���ע��ʱ��Ϊ2015��12��31��ǰ���н�ǿ�ĿƼ��з����������������й����淶���������ز�����Ϊ�걨��λ�����걨���걨��λͬһ����Ŀֻ��ͨ�������Ƽ���λ�걨�����ö�ͷ�걨���ظ��걨��<br/>&nbsp;&nbsp;&nbsp; 2. ��Ŀ�������������⣩�����������и߼�ְ�ƻ���ʿѧλ��1957��1��1���Ժ�������ÿ��������Ŀ�Ĺ���ʱ�䲻������6���¡�<br/>&nbsp;&nbsp;&nbsp; ����ϸ����ת���о����������׿Ƽ����������ӵ�����������Ϣ�����������ʻ������������̵��ء�4���ص�ר��������������ѧ����Ŀ��������ѧ����Ŀ�������⣬��Ŀ�����˼�������Ա��ӦΪ1982��1��1���Ժ�������������ѧ����Ŀ��������ͬʱ���и߼�ְ�ƺͲ�ʿѧλ��<br/>&nbsp;&nbsp;&nbsp; 3. ��Ŀ�������������⣩������ԭ����ӦΪ����Ŀ�������������⣩�����о�˼·�������ߺ�ʵ�������о��ĿƼ���Ա�������͵ط����������Ĺ�����Ա��������ʹ�Ƽ��ƻ�����ְ�ܵ�������Ա�������걨��Ŀ�������������⣩��<br/>&nbsp;&nbsp;&nbsp; 4. ��Ŀ�������������⣩���������걨1����Ŀ�������������⣩�������ص������о���չ�ƻ���973�ƻ������ش���ѧ�о��ƻ��������Ҹ߼����о���չ�ƻ���863�ƻ��������ҿƼ�֧�żƻ������ҹ��ʿƼ�����ר������ش���ѧ�����豸����ר���������ҵ����ר����¼��ơ��ĸ�ǰ�ƻ������Լ����ҿƼ��ش�ר������ص��з��ƻ��ص�ר��������Ŀ�������������⣩�����˲���ǣͷ�걨��Ŀ�������������⣩�������ص��з��ƻ��ص�ר����������Ŀ�����ˣ��������������⸺���ˣ�Ҳ���ò����걨��Ŀ�������������⣩��<br/>&nbsp;&nbsp;&nbsp; ��Ŀ�Ǹɵ��걨��Ŀ�͸ĸ�ǰ�ƻ������ҿƼ��ش�ר������ص��з��ƻ�������Ŀ�������ó���2�����ĸ�ǰ�ƻ������ҿƼ��ش�ר������ص��з��ƻ���������Ŀ�������������⣩�����˲������걨�����ص��з��ƻ��ص�ר����Ŀ�������������⣩���˳�Ŀǰ�е�����Ŀ�������������⣩��<br/>&nbsp;&nbsp;&nbsp; �ƻ�������ִ���ڣ��������ں���ִ���ڣ���2017��6��30��֮ǰ��������Ŀ�������������⣩�������Χ�ڡ�<br/>&nbsp;&nbsp;&nbsp; 5. ��������ίίԱ�����걨��Ŀ�������������⣩�������ص�ר��ʵʩ��������������Ŀָ�ϱ��Ƶ�ר�ң������걨���ص�ר����Ŀ�������������⣩��<br/>&nbsp;&nbsp;&nbsp; 6. ��Ƹ���ڵص�λ���⼮��ѧ�Ҽ��ۡ��ġ�̨������ѧ�ҿ���Ϊ�ص�ר������Ŀ�������������⣩�����ˣ�ȫְ��Ƹ��Ա�����ڵ�Ƹ�õ�λ�ṩȫְƸ�õ���Ч֤������ȫְ��Ƹ��Ա�����ڵ�Ƹ�õ�λ�;��ⵥλͬʱ�ṩƸ�õ���Ч֤��������ֽ����ĿԤ�걨��һ�����͡�<br/>&nbsp;&nbsp;&nbsp; 7. �걨��Ŀ��������ԭ���ϲ��ܸ����걨��λ�͸����ˡ�<br/>&nbsp;&nbsp;&nbsp; 8. ��Ŀ�ľ����걨Ҫ�����������ص�ר�����걨ָ�ϡ�<br/>&nbsp;&nbsp;&nbsp; ���걨��λ����ʽ�ύ��Ŀ�걨��ǰ�����ù��ҿƼ�������Ϣϵͳ��������ƽ̨��ѯ���ؿ�����Ա�е��ĸ�ǰ�ƻ��͹��ҿƼ��ش�ר������ص��з��ƻ��ص�ר��������Ŀ�������������⣩�����������ظ��걨��<br/><strong>&nbsp;&nbsp;&nbsp; �ġ������걨��ʽ<br/></strong>&nbsp;&nbsp;&nbsp; 1. ������������걨��λ��Ҫ��ͨ�����ҿƼ�������Ϣϵͳ��������ƽ̨�������������Ŀ����רҵ����������������걨����Ϊ������ʽ���顢��Ŀ���������ݡ�Ԥ�걨����ʽ�ڹ��ҿƼ�������Ϣϵͳ��������ƽ̨����ר�����ء�<br/>&nbsp;&nbsp;&nbsp; ��Ŀ�걨��λ�����Ԥ�걨��������ʱ��Ϊ��2016��10��17��8��00��11��14��17��00���걨��Ŀͨ���������������걨��λ��Ҫ�����ʽ�걨�飬��ͨ�����ҿƼ�������Ϣϵͳ�ύ������ʱ�����й�Ҫ������֪ͨ��<br/>&nbsp;&nbsp;&nbsp; ���ҿƼ�������Ϣϵͳ��������ƽ̨��http��//service.most.gov.cn��<br/>&nbsp;&nbsp;&nbsp; ������ѯ�绰��010��88659000���м��ߣ���<br/>&nbsp;&nbsp;&nbsp; ������ѯ���䣺program@most.cn��<br/>&nbsp;&nbsp;&nbsp; 2. ��֯�Ƽ��������Ƽ���λ��2016��11��16��ǰ���Լĳ�ʱ��Ϊ׼�������Ӹ��Ƽ���λ���µ��Ƽ�����ֽ�ʣ�һʽ2�ݣ����Ƽ���Ŀ�嵥��ֽ�ʣ�һʽ2�ݣ����ͿƼ�����Ϣ���ġ��Ƽ���Ŀ�嵥��ͨ��ϵͳֱ�����ɴ�ӡ��<br/>&nbsp;&nbsp;&nbsp; ���͵�ַ�������к�����ľ�ص�ï�־�18��д��¥���Ƽ�����Ϣ����Э�������ʱࣺ100038��<br/>&nbsp;&nbsp;&nbsp; ��ϵ�绰��010��88654074��<br/>&nbsp;&nbsp;&nbsp; 3. ���ϱ��ͺ�ҵ����ѯ�������걨��λ��2016��11��16��ǰ���Լĳ�ʱ��Ϊ׼�������Ӹ��걨��λ���µ�Ԥ�걨�飨ֽ�ʣ�һʽ2�ݣ������ͳе���Ŀ�����ص�ר��������רҵ������Ԥ�걨����ͨ��ϵͳֱ�����ɴ�ӡ��<br/>&nbsp;&nbsp;&nbsp; ���ص�ר������ѯ�绰�����͵�ַ���£�<br/>&nbsp;&nbsp;&nbsp; ��1������ϸ����ת���о����Ե�ר�010-88225198��010-88225068��<br/>&nbsp;&nbsp;&nbsp; �й����＼����չ���ģ����͵�ַ�������к��������Ļ���·16��Ժ4��¥���ʱࣺ100039��<br/>&nbsp;&nbsp;&nbsp; ��2�������׿Ƽ����ص�ר�010-58881072��<br/>&nbsp;&nbsp;&nbsp; ��3�������ӵ�����������Ϣ���ص�ר�010-58881070��<br/>&nbsp;&nbsp;&nbsp; ��4��������ѧװ��ǰ���о����ص�ר�010-58881079��<br/>&nbsp;&nbsp;&nbsp; ��5���������ʻ������������̵��ء��ص�ר�010-58881071��<br/>&nbsp;&nbsp;&nbsp; ��6����ȫ���仯��Ӧ�ԡ��ص�ר�010-58881076��<br/>&nbsp;&nbsp;&nbsp; ��ѧ�������߼����о���չ���ģ����͵�ַ��������������·һ��9��¥���ʱࣺ100044��<br/>&nbsp;&nbsp;&nbsp; ��7������ѧ���Ϻ�ũҩ��ʩ��Ч�ۺϼ����з����Ե�ר�010-59199379��<br/>&nbsp;&nbsp;&nbsp; ��8������ʳ������Ч�Ƽ����¡��ص�ר�010-59199380��<br/>&nbsp;&nbsp;&nbsp; ��9����ũҵ��Դ���ؽ�����Ⱦũ���ۺϷ������޸������з����ص�ר�010-59199367��59199368��<br/>&nbsp;&nbsp;&nbsp; ũҵ���Ƽ���չ���ģ����͵�ַ�������г�������������·96��ũ�����ã��ʱࣺ100122��<br/>&nbsp;&nbsp;&nbsp; ��10�����ߴ�ũ�������֡��Ե�ר�010-68598497��<br/>&nbsp;&nbsp;&nbsp; ��11�����ִ�ʳƷ�ӹ�����ʳ�մ��˼�����װ�����ص�ר�010-68510207��<br/>&nbsp;&nbsp;&nbsp; ��12���������ش��߲���������Ч��ȫ��ֳ�ۺϼ����з����ص�ר�010-68598087��<br/>&nbsp;&nbsp;&nbsp; ��13������ҵ��Դ��������Ч���ü������¡��ص�ר�010-68598076��<br/>&nbsp;&nbsp;&nbsp; ��14��������ũ��װ�����ص�ר�010-68511832��<br/>&nbsp;&nbsp;&nbsp; �й�ũ�弼���������ģ����͵�ַ��������������������·54�ţ��ʱࣺ100045��</p><p>&nbsp;</p><p style="TEXT-ALIGN: right">�� �� ��&nbsp;&nbsp;&nbsp; <br/>2016��10��9��ǩ��<br/>2016��10��10�շ���</p><p style="TEXT-ALIGN: left">���ظ������ڿƼ�����վ��ѯ��<a href="http://www.most.gov.cn/mostinfo/xinxifenlei/fgzc/gfxwj/gfxwj2016/201610/t20161009_128109.htm">http://www.most.gov.cn/mostinfo/xinxifenlei/fgzc/gfxwj/gfxwj2016/201610/t20161009_128109.htm</a></p></P>	
+	
+	<!-- ����Ϊ���ݣ�һ��Ϊ���� -->
+	
+	
+	
+</div>
+<!-- ΢�ŷ�������ֻ���Է�����֪ͨ���桱��������̬�����Ƽ���̬(�Ƽ���Ϣ)��������Ŀ
+	��������Ŀ���ֱ�������names�е���Ŀ����
+ -->
+<!-- �������·�����΢�ŵĹ��� -->
+
+<!-- <div class="fenxiang">
+	<div class="bshare-custom icon-medium-plus">
+		<a title="������" href="http://www.bShare.cn/" id="bshare-shareto" class="bshare-more">������</a>
+		<a title="������΢��"  class="bshare-weixin"></a>
+	</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+<a class="bshareDiv" onclick="javascript:return false;"></a>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>	
+</div>
+ -->
+<div class="bshare-custom">
+<div class="bsPromo bsPromo2"></div>
+	<a title="����ƽ̨" class="bshare-more bshare-more-icon more-style-addthis"></a>
+	<a title="������QQ�ռ�" class="bshare-qzone"></a>
+	<a title="����������΢��" class="bshare-sinaminiblog"></a>
+	<a title="��������Ѷ΢��" class="bshare-qqmb"></a>
+	<a title="������������" class="bshare-renren"></a>
+	<a title="������΢��" class="bshare-weixin" href="javascript:void(0);"></a>
+</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+
+
+<div class="quotes">
+  </div>
+       <div id="boot"></div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+  
+
+<script Language="JavaScript" src="../../script/MD5.js"></script>
+<link rel="icon" href="/images/cnu.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/cnu.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style_home.css" rel="stylesheet" type="text/css">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="../Scripts/rss.js" type="text/javascript"></script>
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+
+
+<div id="copyright">  
+	  <div class="di"><font color="#FFFFFF" face="Tahoma, Verdana" class="bai">Copyright &copy;<a href="http://kjc.ysu.edu.cn/">��ɽ��ѧ��ѧ�����о�Ժ��Ȩ����</a><br>
+      <a href="http://www.e-plugger.com"><img src="images/ep.gif" border="0" /></a>&nbsp;����֧�֣��������������Ƽ��������޹�˾</font></div>
+      <div class="yjx"><a href="mainPageIndex.do?actionType=initIdea"><img src="images/yjx.gif" border="0" /></a></div>
+</div> 
+
+</body>
+</html>
+</body>
+</html>

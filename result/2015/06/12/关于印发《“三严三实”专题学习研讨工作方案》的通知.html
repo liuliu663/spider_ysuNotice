@@ -1,7 +1,544 @@
-function (selector, context, r, opts) {
-    if (!(this instanceof initialize)) {
-      return new initialize(selector, context, r, opts);
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML><HEAD><TITLE>关于印发《“三严三实”专题学习研讨工作方案》的通知-燕山大学“三严三实”专题教育网站</TITLE>
+
+
+
+
+<META content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<META name="keywords" content="">
+<META name="description" content=""><LINK rel="stylesheet" type="text/css" href="../../style/list.css" media="screen"><script language="javascript" type="text/javascript" src="../../dfiles/5313/include/dedeajax2.js"></script><script language="javascript" type="text/javascript">
+<!--
+    function CheckLogin(){
+      var taget_obj = document.getElementById('_ajax_feedback');
+      myajax = new DedeAjax(taget_obj,false,false,'','','');
+      myajax.SendGet2("/member/ajax_feedback.php");
+      DedeXHTTP = null;
     }
-    opts = _.defaults(opts || {}, options);
-    return Cheerio.call(this, selector, context, r || root, opts);
-  }
+    function checkSubmit(){
+        if(document.feedback.msg.value!='') document.feedback.submit();
+        else alert("评论内容不能为空！");
+    }
+function postBadGood(ftype,fid)
+{
+    var taget_obj = document.getElementById(ftype+fid);
+    var saveid = GetCookie('badgoodid');
+    if(saveid != null)
+    {
+        var saveids = saveid.split(',');
+        var hasid = false;
+        saveid = '';
+        j = 1;
+        for(i=saveids.length-1;i>=0;i--)
+        {
+            if(saveids[i]==fid && hasid) continue;
+            else {
+                if(saveids[i]==fid && !hasid) hasid = true;
+                saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+                j++;
+                if(j==10 && hasid) break;
+                if(j==9 && !hasid) break;
+            }
+        }
+        if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+        else saveid += ','+fid;
+        SetCookie('badgoodid',saveid,1);
+    }
+    else
+    {
+        SetCookie('badgoodid',fid,1);
+    }
+    myajax = new DedeAjax(taget_obj,false,false,'','','');
+    myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+    DedeXHTTP = null;
+}
+function postDigg(ftype,aid)
+{
+    var taget_obj = document.getElementById('newdigg');
+    var saveid = GetCookie('diggid');
+    if(saveid != null)
+    {
+        var saveids = saveid.split(',');
+        var hasid = false;
+        saveid = '';
+        j = 1;
+        for(i=saveids.length-1;i>=0;i--)
+        {
+            if(saveids[i]==aid && hasid) continue;
+            else {
+                if(saveids[i]==aid && !hasid) hasid = true;
+                saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+                j++;
+                if(j==20 && hasid) break;
+                if(j==19 && !hasid) break;
+            }
+        }
+        if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+        else saveid += ','+aid;
+        SetCookie('diggid',saveid,1);
+    }
+    else
+    {
+        SetCookie('diggid',aid,1);
+    }
+    myajax = new DedeAjax(taget_obj,false,false,'','','');
+    var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+    myajax.SendGet2(url);
+    DedeXHTTP = null;
+}
+function getDigg(aid)
+{
+    var taget_obj = document.getElementById('newdigg');
+    myajax = new DedeAjax(taget_obj,false,false,'','','');
+    myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+    DedeXHTTP = null;
+}
+
+-->
+</script>
+
+<!--Announced by Visual SiteBuilder 9-->
+<link rel="stylesheet" type="text/css" href="../../_sitegray/_sitegray_d.css" />
+<script language="javascript" src="../../_sitegray/_sitegray.js"></script>
+<!-- CustomerNO:77656262657232307e7f47545350544a03040000 -->
+<link rel="stylesheet" type="text/css" href="../../content.vsb.css" />
+<META Name="keywords" Content="燕山大学“三严三实”专题教育网站" />
+<script type="text/javascript" src="../../system/resource/js/counter.js"></script>
+<script type="text/javascript">_jsq_(1012,'/content.jsp',1205,1174677041)</script>
+</HEAD>
+<BODY>
+<DIV id="header" class="width986">
+<DIV id="topnav" class="yahei"><SPAN class="left"><SPAN class="white">燕山大学“三严三实”专题教育、解放思想大讨论专题网站</SPAN></SPAN><SPAN class="right"><A class="white" href="http://www.ysu.edu.cn/" rel="nofollow" target="_blank">燕山大学</A> - <A class="white" href="http://news.ysu.edu.cn/" rel="nofollow" target="_blank">燕山大学新闻网</A></SPAN></DIV>
+<DIV id="banner"></DIV>
+<DIV id="menu" class="yahei"><!--#begineditable viewid="52377" name="网站导航"--><style type="text/css">
+td.b1_0_{FONT-SIZE:9pt;}
+td.b2_0_{FONT-SIZE:9pt;}
+td.b3_0_{FONT-SIZE:9pt;BORDER-BOTTOM: #cccccc 1px solid;BACKGROUND-COLOR: #eeeeee;BORDER-RIGHT: #cccccc 1px solid;}
+td.b4_0_{FONT-SIZE:9pt;BORDER-BOTTOM: #cccccc 1px solid;BACKGROUND-COLOR: #eeeeee;BORDER-RIGHT: #cccccc 1px solid;}
+a.menu0_0_:link {TEXT-DECORATION: none;};
+a.menu0_0_:visited { TEXT-DECORATION: none;};
+a.menu0_0_:hover {TEXT-DECORATION: none;};
+a.menu0_0_:active {TEXT-DECORATION: none;};
+table.tb1_0_{FONT-SIZE:9pt;border:0;}
+span.s1_0_{LINE-HEIGHT: 160%;FONT-FAMILY: 宋体;COLOR: #ffff00;FONT-SIZE: 10pt;TEXT-DECORATION: underline;}
+span.s2_0_{LINE-HEIGHT: 160%;FONT-FAMILY: 宋体;COLOR: #cc0000;FONT-SIZE: 11pt;TEXT-DECORATION: none;}
+span.s10_0_{LINE-HEIGHT: 160%;FONT-FAMILY: 宋体;COLOR: #ffffff;FONT-SIZE: 10pt;TEXT-DECORATION: none;}
+span.s20_0_{LINE-HEIGHT: 160%;FONT-FAMILY: 宋体;COLOR: #000000;FONT-SIZE: 11pt;TEXT-DECORATION: none;}
+</style>
+<SCRIPT language="javascript"> 
+ var showfix_0_ = 1;
+ var isvertical_0_ = false;
+</SCRIPT>
+<script language="javascript" src="../../system/resource/js/menu/text.js"></script>
+<TABLE id="t1_0_" cellSpacing="0" cellPadding="0" border="0" height="0" width="0"><TR><TD valign="center"></TD><TD valign="middle" height="0" width="0" nowrap class="b1_0_" align="center" id="a_0_1001" onmouseover="tshowLayers('1001','b2_0_', '_0_')" onmouseout="thideLayers('1001','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../index.htm"><span class="fontstyle52377">&nbsp;专题首页&nbsp;</span></a></TD><TD valign="center" class="leaderfont52377">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1005" onmouseover="tshowLayers('1005','b2_0_', '_0_')" onmouseout="thideLayers('1005','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../xxdt.htm"><span class="fontstyle52377">&nbsp;学校动态&nbsp;</span></a></TD><TD valign="center" class="leaderfont52377">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1012" onmouseover="tshowLayers('1012','b2_0_', '_0_')" onmouseout="thideLayers('1012','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../wjtz.htm"><span class="fontstyle52377">&nbsp;文件通知&nbsp;</span></a></TD><TD valign="center" class="leaderfont52377">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1006" onmouseover="tshowLayers('1006','b2_0_', '_0_')" onmouseout="thideLayers('1006','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../jcxl.htm"><span class="fontstyle52377">&nbsp;基层巡礼&nbsp;</span></a></TD><TD valign="center" class="leaderfont52377">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1015" onmouseover="tshowLayers('1015','b2_0_', '_0_')" onmouseout="thideLayers('1015','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../sjjs.htm"><span class="fontstyle52377">&nbsp;上级精神&nbsp;</span></a></TD><TD valign="center" class="leaderfont52377">|</TD><TD valign="middle" width="0" nowrap class="b1_0_" align="center" id="a_0_1007" onmouseover="tshowLayers('1007','b2_0_', '_0_')" onmouseout="thideLayers('1007','b1_0_', '_0_','true','true')"><a class="menu0_0_" href="../../xxzl.htm"><span class="fontstyle52377">&nbsp;学习资料&nbsp;</span></a></TD></TR></TR></table><!--#endeditable--></DIV>
+<DIV id="timeAndSearch">
+<DIV id="time" class="fl"><script language="javascript" type="text/javascript">
+setInterval("document.getElementById('time').innerHTML='当前时间：' + new Date().toLocaleString()+ ' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000)</script></DIV>
+<DIV class="search">
+<DIV class="form" style="width: 300px;float: left;height: 30px"></DIV>
+<DIV id="suggest" style="width: 220px;float: right;height: 30px"><A href="mailto:yjzj@ysu.edu.cn" target="_blank">征求意见箱 syss@ysu.edu.cn</A></DIV></DIV><!-- /search --></DIV></DIV><!-- /header --><BR class="clear">
+<DIV class="channel-nav w986">
+<UL>
+<LI class="thisclass"><A href="../../html/lilunjiedu/peopledaily/index.html"><SPAN>人民日报：学习实践活动系列评论</SPAN></A> </LI></UL><SPAN class="back"><A href="../../">返回首页</A> </SPAN></DIV><!-- /channel-nav -->
+<DIV class="w986">
+<DIV class="pleft">
+<DIV class="place">
+<H1><STRONG>当前位置:</STRONG> <A href="http://kxfzg.ysu.edu.cn//"></A>&gt;&nbsp; <!--#begineditable viewid="52393" name="装饰文字1"--><span class="titlestyle52393">文件通知</span><!--#endeditable--></H1></DIV><!-- /place -->
+<DIV class="viewbox">
+<DIV class="title"></DIV>
+<DIV class="dede_pages" style="text-align: left"><!--#begineditable viewid="52373" name="文章内容"-->
+<LINK href="../../system/resource/style/component/news/content/title.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+     .content{margin:auto;text-align:left;line-height:18px;padding:3px 0 0 0;color:#727272;}
+     .process{width:162px;height:11px;background:#EDEDED;overflow:hidden;float:left;margin-left:26px !important;margin-left:13px;margin-right:10px;}
+     .process div{width:160px;height:11px;background:url(../../system/resource/images/newsvote/bg.gif) repeat-x;border-left:1px solid #000;border-right:1px solid #000;}
+     .process .style7{border-left-color:#ff0000;border-right-color:#ff0000;background-position:0 -77px;}
+     
+</style>
+
+
+<script language="javascript" src="../../_dwr/interface/NewsvoteDWR.js"></script>
+<script language="javascript" src="../../_dwr/engine.js"></script>
+<script language="javascript" src="../../_dwr/util.js"></script>
+<script language="javascript" src="../../system/resource/js/news/newscontent.js"></script>
+<script type="text/javascript">
+
+NewsvoteDWR.getNewsLinkUrl(1205,"1174677041","vsb",newsSkip);
+function newsSkip(data)
+{
+    if(data != "")
+    {
+        window.location.href = data;
+    }
+}
+</script>
+
+
+
+<form name="form52373a">
+<table border="0" class="winstyle52373" width="100%" cellspacing="0" cellpadding="0">
+
+      <tr><td class="titlestyle52373" align="center">
+关于印发《“三严三实”专题学习研讨工作方案》的通知
+      </td></tr>
+      <tr height="30"><td align="center">
+            <span class="timestyle52373">
+                 2015-06-12 15:19</span>
+            <span class="authorstyle52373">党委组织部&nbsp;</span>
+            
+        </td></tr>
+        <tr><td align="right">
+        <span>
+
+        </span>
+        </td></tr>
+<tr><td height="1" BACKGROUND="../../dfiles/5313/images/top_border.jpg"></td></tr>
+      <tr><td class="contentstyle52373">
+        <div class="c52373_content" id="vsb_newscontent"><div id="vsb_content">
+           <p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">各党委、党总支：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <!--?xml:namespace prefix="o" ns="urn:schemas-microsoft-com:office:office" /-->
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">根据学校党委《关于在全校处级以上领导干部中深入开展“三严三实”专题教育的实施方案》要求，现就做好“三严三实”专题学习研讨，制定如下工作方案。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 黑体;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">一、总体安排</span><span style="font-family: 黑体;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">专题学习研讨从6月初开始至11月底结束，分3个专题进行，大体上每两个月1个专题。每个专题组织2次集中学习研讨会，每次学习研讨时间不少于半天。（专题学习研讨进程安排详见附件1）</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 黑体;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">二、学习研讨形式</span><span style="font-family: 黑体;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">1、个人自学。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">以学习习近平总书记系列重要讲话精神、重点学习书目为主要内容。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">2、每月1次集中学习研讨会。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">学校党委和各基层党委（党总支）组织处级以上领导干部对照学习内容和研讨重点，以学校和中层单位领导班子集中学习、研讨交流的形式开展。集中学习研讨会上，学校领导班子成员和处级领导干部要撰写发言提纲，依次进行研讨发言，要紧密结合学校和本单位实际，结合自身思想工作实际，剖析存在的不严不实问题和表现，做到见人见事见思想，要有实质内容，不泛泛而谈。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">3、每月1次专题辅导讲座。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">学校党委讲师团对照“三严三实”主题，研究设计了一系列专题辅导讲座（专题辅导讲座菜单详见附件2），各基层党委（党总支）在进行专题学习研讨期间，原则上每月邀请专家学者为本单位处级领导干部（参加人员范围可根据单位实际扩大到党委委员、科级干部、院属业务单位干部、教职工和学生党支部书记等）进行1次专题辅导讲座。专题辅导讲座不代替每月1次的集中学习研讨会。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">4、每个专题撰写1篇学习心得。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">学校领导班子成员和处级领导干部在每个专题学习研讨基本完成时，撰写1篇学习心得，学习心得电子版发送至syss@ysu.edu.cn，以存档备查，并通过一定方式在学校专题教育网站刊发。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">5、每个专题撰写学习笔记和发言提纲。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">学校领导班子成员和处级领导干部在个人自学、集中学习研讨会、专题辅导讲座期间，应当做好学习笔记的撰写，以存档备查；在集中学习研讨会上，学校领导班子成员和处级领导干部应当撰写发言提纲，每次集中学习研讨会结束后的三个工作日内，将发言提纲电子版发送至syss@ysu.edu.cn，以存档备查，应当安排专人做好研讨时间、地点、参会人员、研讨主题、发言要点等过程记录，以存档备查。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 黑体;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">三、学习研讨专题</span><span style="font-family: 黑体;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">专题一（6月初-7月底）：严以修身，加强理论学习，提高党性修养，坚定理想信念，把牢思想和行动的“总开关”。</span><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">1、研讨重点：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">如何坚定马克思主义信仰和中国特色社会主义信念，增强道路自信、理论自信、制度自信；如何站稳党和人民立场，牢固树立正确的世界观、人生观、价值观和公私观、是非观、义利观，忠于党、忠于国家、忠于人民；如何保持高尚道德情操和健康生活情趣，自觉远离低级趣味，树立良好家风，坚决抵制歪风邪气，坚守共产党人精神家园。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">2、需要解决的重点问题：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">疏于理论学习，理想信念不坚定，党性修养不过硬，与党中央保持高度一致自觉性不高的问题等；原则性、战斗性减弱，对不良言行缺少斗争，在大是大非面前态度暧昧、立场模糊的问题等；有悖社会主义核心价值观和传统美德，缺乏社会公德、职业道德、家庭美德和个人品德等方面的问题表现和思想根源。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">3、集中学习研讨会时间：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">6月中旬1次、7月中旬1次。其中，7月中旬，学校领导班子开展以“坚持和完善普通高等学校党委领导下的校长负责制”为主题的中心组集中学习研讨，各中层单位领导班子要开展以“规范党政运行、科学民主决策”为主题的中心组集中学习研讨。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">专题二（8月初-9月底）：严以律己，严守党的政治纪律和政治规矩，自觉做政治上的“明白人”。</span><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">1、研讨重点：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">如何严格遵守党章，自觉维护党中央权威，任何时候任何情况下做到在思想上政治上行动上与党中央保持高度一致；如何维护党的团结，做老实人、说老实话、干老实事，不搞团团伙伙，不搞任何形式的派别活动；如何管好亲属和身边工作人员，不让他们利用特殊身份谋取非法利益。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">2、需要解决的重点问题：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">组织观念淡薄，目无组织纪律，凌驾于组织之上或游离于组织之外，不守政治规矩和工作规范，自由主义等方面的问题表现和思想根源；对该向组织汇报的重大事项隐瞒不报的问题等；不顾大局，搞上有政策、下有对策的问题等。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">3、集中学习研讨会时间：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">8月中旬1次、9月中旬1次。其中，8月中旬，学校领导班子和各中层单位领导班子集中学习研讨会要与暑期务虚会相结合。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">专题三（10月初-11月底）：严以用权，真抓实干，实实在在谋事创业做人，当忠诚干净担当的好干部。</span><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">1、研讨重点：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">如何坚持用权为民，自觉遵守宪法法律和党的纪律，按规则、按制度、按法律行使权力，敬法畏纪，为政清廉，任何时候都不搞特权、不以权谋私；如何坚持民主集中制，自觉接受监督，不搞大权独揽、独断专行；如何坚持从实际出发谋划事业、推进工作，敢于担责、为官有为，努力创造经得起实践、人民、历史检验的工作实绩。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">2、需要解决的重点问题：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">以权谋私、用权不公、专权独断、与民争利和形式主义、官僚主义、享乐主义、奢靡之风，执行上级政策和学校党委行政决策打折扣、搞变通，有令不行、有禁不止等方面的问题表现和思想根源；违背客观实际和客观规律，好高骛远、急进冒进、装点门面，胡作为、乱作为，政绩观存在偏差等方面的问题表现和思想根源；工作漂浮、不想干事，为官不为、为官不勤，心浮气躁、干事不实，议而不决、决而不做，回避困难、缺乏担当等方面的问题表现和思想根源；公权私用，滥用职权，搞权力寻租的问题等。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">3、集中学习研讨会时间：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">10月中旬1次、11月中旬1次。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 黑体;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">四、学习研讨内容</span><span style="font-family: 黑体;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">1、系统学习习近平总书记系列重要讲话精神。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">习近平总书记在中央政治局十六次集体学习时的讲话、在党的群众路线教育实践活动总结大会上的讲话、同中央党校第一期县委书记研修班学员座谈时的讲话、在十八届中央纪委五次全会上的讲话、在省部级主要领导干部学习贯彻十八届四中全会精神全面推进依法治国专题研讨班开班式上的讲话、在中央政治局第二十一次集体学习时的讲话精神等。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">2、重点学习书目。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">《中国共产党章程》《习近平谈治国理政》《习近平总书记系列重要讲话读本》《习近平关于党风廉政建设和反腐败斗争论述摘编》《优秀领导干部先进事迹选编》《领导干部违纪违法典型案例警示录》等。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 黑体;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">五、有关要求</span><span style="font-family: 黑体;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">1、思想上高度重视。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">开展专题学习研讨是“三严三实”专题教育的“关键动作”和重要步骤，标准高、要求严，中央、省委和学校党委重视程度高，也是省委和学校党委检查督查的重点内容。各基层党委（党总支）及其主要负责同志要从提升管党治党意识、落实管党治党责任的高度，切实履行好第一责任人的职责，亲自谋划、率先垂范，参照本工作方案制定切合单位实际的专题学习研讨计划、推进步骤等，精心组织本单位处级领导干部的学习教育；处级及以上领导干部要把专题学习研讨作为当前的重要政治任务，严格按照进程按时参加相关学习研讨活动。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">2、把学习贯穿始终。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">要坚持集中学习与个人自学相结合、正面教育与反面警示相结合；要将学习教育贯穿于专题教育的全过程，坚持原原本本学、原汁原味学，真读真学、精读深读、学深悟透；要深入领会贯穿其中的立场、观点、方法，做到学而信、学而用、学而行；要充分利用业余时间抓好个人自学，特别是做好暑假期间的个人自学和交流研讨。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 楷体_gb2312;font-size: 21px;font-weight: bold;mso-spacerun: 'yes';mso-font-kerning: 1px">3、坚持问题导向。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">要把问题意识贯穿专题教育全过程，立足发现问题、解决问题，带着问题学、带着问题谈；要把学习贯彻“三严三实”要求，与巩固和扩大党的群众路线教育实践活动成果结合起来，与单位改革发展、内涵建设结合起来，逐条梳理分析，提出解决方案；要突出问题导向，谈认识和感受、差距和不足、努力方向和打算；要真正触及思想、触动灵魂，推动思想碰撞、观点交锋，达到相互启发、共同提高的效果。</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">附件：</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">1、燕山大学“三严三实”专题学习研讨进程安排表</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">2、燕山大学党委讲师团“三严三实”专题辅导讲座菜单</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-justify: inter-ideograph;text-align: justify;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-align: right;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">中共燕山大学委员会组织部</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p> 
+<p class="MsoNormal" style="text-align: right;line-height: 33px;text-indent: 43px;text-autospace: ideograph-numeric;mso-line-height-rule: exactly;mso-char-indent-count: 2.0000;mso-para-: none"><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">2015年6月12日</span><span style="font-family: 仿宋_gb2312;font-size: 21px;mso-spacerun: 'yes';mso-font-kerning: 1px">
+  <o:p></o:p></span></p>
+</div></div>
+          
+           
+           
+        </td></tr>
+        
+        <tr><td class="pagestyle52373" align="left">
+        </td></tr>
+        <tr><td><div id="div_vote_id"></div></td></tr>
+    <tr><td align="left"><span>
+             <script language="javascript" src="../../system/resource/js/ajax.js"></script><span>附件【<a href="../../system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1174677041&wbfileid=260820"><span>燕大党组字〔2015〕12号.pdf</span></a>】</span><span>已下载<span id="nattach260820"><script language="javascript">getClickTimes(260820,1174677041,"wbnewsfile","attach")</script></span>次</span><br><span>附件【<a href="../../system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1174677041&wbfileid=260818"><span>附件1-燕山大学“三严三实”专题学习研讨进程安排表.docx</span></a>】</span><span>已下载<span id="nattach260818"><script language="javascript">getClickTimes(260818,1174677041,"wbnewsfile","attach")</script></span>次</span><br><span>附件【<a href="../../system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1174677041&wbfileid=260819"><span>附件2-燕山大学党委讲师团“三严三实”专题辅导讲座菜单.doc</span></a>】</span><span>已下载<span id="nattach260819"><script language="javascript">getClickTimes(260819,1174677041,"wbnewsfile","attach")</script></span>次</span><br>
+             
+      </span></td></tr>
+      
+      <tr>
+         <td align="center">
+            
+         </td>
+      </tr>
+
+      <tr><td align="right">
+<table><tr><td class="contextstyle52373"><a href="1206.htm"><span class="contextstyle52373">上一条：关于印发《学校领导班子成员“三严三实”专题教育调研工作方案》的通知</span></a></td></tr><tr><td class="contextstyle52373"><a href="1159.htm"><span class="contextstyle52373">下一条：关于调整学校党政领导联系点的通知</span></a></td></tr></table>      </td></tr>
+
+</table>
+</form>
+
+
+
+<script type="text/javascript">
+
+function dosuba52373a()
+{
+    try{
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.indexOf("msie 8")>-1)
+        {
+            window.external.AddToFavoritesBar(document.location.href,document.title,"");//IE8
+        }else{
+            if (document.all) 
+            {
+                window.external.addFavorite(document.location.href, document.title);
+            }else if(window.sidebar)
+            {
+                window.sidebar.addPanel( document.title, document.location.href, "");//firefox
+            }
+        }
+
+    }
+    catch (e){alert("无法自动添加到收藏夹，请使用 Ctrl + d 手动添加");}
+}
+
+
+</script>
+<!--#endeditable--></DIV><!-- /pages --><BR class="clear">
+<DIV class="handle"><BR class="clear"></DIV><!-- /handle --></DIV><!-- /viewbox --></DIV><!-- /pleft -->
+<DIV class="pright">
+<DIV class="commend">
+<DL class="tbox">
+<DT><STRONG>推荐内容</STRONG> 
+<DD>
+<DIV style="height: 120px"><!--#begineditable viewid="52396" name="推荐内容"--><table width="100%" cellspacing="4" cellpadding="0">
+  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52396"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../../content.jsp?urltype=news.NewsContentUrl&wbtreeid=1012&wbnewsid=1488" class="c52396" title="关于印发《燕山大学“解放思想、抢抓机遇、奋发作为、协同发展”大讨论协同攻关项目部试点方案》的通知" target="_blank">
+        关于印发《燕山大学“解放思...
+        </a>
+        
+        
+        
+        <span valign="middle" class="timestyle52396" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52396"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../../content.jsp?urltype=news.NewsContentUrl&wbtreeid=1012&wbnewsid=1487" class="c52396" title="燕山大学“解放思想、抢抓机遇、奋发作为、协同发展”大讨论推进方案" target="_blank">
+        燕山大学“解放思想、抢抓机...
+        </a>
+        
+        
+        
+        <span valign="middle" class="timestyle52396" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52396"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1486.htm" class="c52396" title="关于转发《河北省人民群众建议征集办公室〈关于开展“我为协同发展献良策”活动的公开信〉》的通知" target="_blank">
+        关于转发《河北省人民群众建...
+        </a>
+        
+        
+        
+        <span valign="middle" class="timestyle52396" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52396"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1420.htm" class="c52396" title="燕山大学“三严三实”专题民主生活会工作方案" target="_blank">
+        燕山大学“三严三实”专题民...
+        </a>
+        
+        
+        
+        <span valign="middle" class="timestyle52396" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52396"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../../content.jsp?urltype=news.NewsContentUrl&wbtreeid=1012&wbnewsid=1418" class="c52396" title="关于开展“我为协同发展献良策”活动的通知" target="_blank">
+        关于开展“我为协同发展献良...
+        </a>
+        
+        
+        
+        <span valign="middle" class="timestyle52396" width="1%" nowrap></span>
+            </td>
+        </tr>
+</table><!--#endeditable--></DIV></DD></DL></DIV><!-- /commend -->
+<DIV class="hot">
+<DL class="tbox">
+<DT><STRONG>热点内容</STRONG> 
+<DD>
+<DIV style="height: 230px"><!--#begineditable viewid="52395" name="热点内容"--><table width="100%" cellspacing="4" cellpadding="0">
+  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52395"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../../content.jsp?urltype=news.NewsContentUrl&wbtreeid=1012&wbnewsid=1488" class="c52395" title="关于印发《燕山大学“解放思想、抢抓机遇、奋发作为、协同发展”大讨论协同攻关项目部试点方案》的通知" target="_blank">
+        关于印发《燕山...
+        </a>
+        
+        
+        <span class="clickstyle52395">&nbsp;&nbsp;(点击：<span id="nu41488" name="nu41488"></span>)</span>
+        <span valign="middle" class="timestyle52395" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52395"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1005/1143.htm" class="c52395" title="我校召开落实中办[59]号和燕大党字[11]号文件精神推进会" target="_blank">
+        我校召开落实中...
+        </a>
+        
+        
+        <span class="clickstyle52395">&nbsp;&nbsp;(点击：<span id="nu41143" name="nu41143"></span>)</span>
+        <span valign="middle" class="timestyle52395" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52395"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1006/1144.htm" class="c52395" title="离退休党委举办政治理论辅导报告会" target="_blank">
+        离退休党委举办...
+        </a>
+        
+        
+        <span class="clickstyle52395">&nbsp;&nbsp;(点击：<span id="nu41144" name="nu41144"></span>)</span>
+        <span valign="middle" class="timestyle52395" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52395"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1005/1227.htm" class="c52395" title="学校领导班子举行“三严三实”第一次集中学习研讨会" target="_blank">
+        学校领导班子举...
+        </a>
+        
+        
+        <span class="clickstyle52395">&nbsp;&nbsp;(点击：<span id="nu41227" name="nu41227"></span>)</span>
+        <span valign="middle" class="timestyle52395" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52395"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1006/1145.htm" class="c52395" title="离退休党委召开党支部委员培训班总结会议" target="_blank">
+        离退休党委召开...
+        </a>
+        
+        
+        <span class="clickstyle52395">&nbsp;&nbsp;(点击：<span id="nu41145" name="nu41145"></span>)</span>
+        <span valign="middle" class="timestyle52395" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52395"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1006/1276.htm" class="c52395" title="机关党委举办“严以律己”专题学习会" target="_blank">
+        机关党委举办“...
+        </a>
+        
+        
+        <span class="clickstyle52395">&nbsp;&nbsp;(点击：<span id="nu41276" name="nu41276"></span>)</span>
+        <span valign="middle" class="timestyle52395" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52395"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1006/1140.htm" class="c52395" title="后勤管理处举办廉政教育及《培育和践行社会主义核心价值观》专题讲座" target="_blank">
+        后勤管理处举办...
+        </a>
+        
+        
+        <span class="clickstyle52395">&nbsp;&nbsp;(点击：<span id="nu41140" name="nu41140"></span>)</span>
+        <span valign="middle" class="timestyle52395" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52395"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1005/1128.htm" class="c52395" title="我校承办华北五省（市、区）第二十次高校德育研讨会" target="_blank">
+        我校承办华北五...
+        </a>
+        
+        
+        <span class="clickstyle52395">&nbsp;&nbsp;(点击：<span id="nu41128" name="nu41128"></span>)</span>
+        <span valign="middle" class="timestyle52395" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52395"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="../1005/1256.htm" class="c52395" title="学校召开党委常委会传达学习全省高校领导干部座谈会和高校党委书记、校长暑期培训班精神" target="_blank">
+        学校召开党委常...
+        </a>
+        
+        
+        <span class="clickstyle52395">&nbsp;&nbsp;(点击：<span id="nu41256" name="nu41256"></span>)</span>
+        <span valign="middle" class="timestyle52395" width="1%" nowrap></span>
+            </td>
+        </tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont52395"><img src="../../dfiles/5313/images/ico_2.gif" align="absmiddle" border="0"></span></td>
+<td valign="middle" align="left">
+    
+    
+        <a href="1275.htm" class="c52395" title="关于召开“三严三实”专题教育集中培训暨交流研讨会的通知" target="_blank">
+        关于召开“三严...
+        </a>
+        
+        
+        <span class="clickstyle52395">&nbsp;&nbsp;(点击：<span id="nu41275" name="nu41275"></span>)</span>
+        <span valign="middle" class="timestyle52395" width="1%" nowrap></span>
+            </td>
+        </tr><script language="javascript" src="../../system/resource/js/ajax.js"></script><script language="javascript">_getBatchClickTimes('1488,1143,1144,1227,1145,1276,1140,1128,1256,1275',1174677041,'wbnews','u4')</script>
+</table><!--#endeditable--></DIV></DD></DL></DIV></DIV><!-- /pright --></DIV><BR class="clear">
+<DIV class="footer"><!-- /powered -->
+<DIV class="copyright" style="height: 50px"><!--#begineditable viewid="52391" name="版权"--><P>Copyright © 2015 燕山大学党委组织部 All Rights Reserved. </P>
+<P>地址：燕山大学世纪楼第1807室 E-Mail: <A href="mailto:syss@ysu.edu.cn">syss@ysu.edu.cn</A> TEL:8057060</P>
+<P>开发与技术支持：<IMG src="../../images/yit2.png">燕山大学信息化处</P><!--#endeditable--></DIV></DIV><!-- /footer -->
+
+</BODY></HTML>

@@ -1,7 +1,537 @@
-function (selector, context, r, opts) {
-    if (!(this instanceof initialize)) {
-      return new initialize(selector, context, r, opts);
-    }
-    opts = _.defaults(opts || {}, options);
-    return Cheerio.call(this, selector, context, r || root, opts);
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><html:base/>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<title>��ɽ��ѧ��ѧ�����о�Ժ</title>
+<META Name="keywords" Content="���й���ϵͳ,�������������Ƽ��������ι�˾,��У���й���ϵͳ,ʡ�����й���ϵͳ,���л�������ϵͳ,����Ժ�ۺϹ���ƽ̨,�������й���,ʡ������">
+<META Name="description" Content="���������Ƽ���������������ͳ�ƹ����ν������ܵĿ��й�����Ϣ��ƽ̨
+��Ӧ��,��У���й���ϵͳ������������У�ճ��Ŀ��й�����Ҫ,���ֿ����벿����ʡ�����漰��������ϵͳ�Ľӿ�,���ո���У�����������ж��ƿ���,ʡ�����й���ϵͳ�����Ը�ʡ���У��������й������Ž��п����ۺϹ�������Ϣ�����������Ľ���ƽ̨">
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #C20605;
+}
+.STYLE3 {
+	color: #333333;
+	font-weight: bold;
+	font-size: 14px;
+}
+-->
+</style>
+<script language="javascript">
+function showimg(s){
+//alert(s);
+document.getElementById("AD_Table"+s).style.display="";
+for(i=1;i<5;i++)
+{    
+     if(i==s)
+	 {
+          continue;
+     }
+          document.getElementById("AD_Table"+i).style.display="none";
+}
+
+switch(s)
+{
+case "1":
+     document.getElementById("selbut1").src="images/index25-1.jpg";
+     document.getElementById("selbut2").src="images/index25-2.jpg";
+     document.getElementById("selbut3").src="images/index25-3.jpg";
+	 document.getElementById("selbut4").src="images/index25-4.jpg";
+     break;
+case "2":
+      document.getElementById("selbut1").src="images/index25-1-.jpg";
+      document.getElementById("selbut2").src="images/index25-2-.jpg";
+      document.getElementById("selbut3").src="images/index25-3.jpg";
+	  document.getElementById("selbut4").src="images/index25-4.jpg";
+      break;
+case "3":
+      document.getElementById("selbut1").src="images/index25-1-.jpg";
+      document.getElementById("selbut2").src="images/index25-2.jpg";
+      document.getElementById("selbut3").src="images/index25-3-.jpg";
+	  document.getElementById("selbut4").src="images/index25-4.jpg";
+      break;
+    
+case "4":
+      document.getElementById("selbut1").src="images/index25-1-.jpg";
+      document.getElementById("selbut2").src="images/index25-2.jpg";
+      document.getElementById("selbut3").src="images/index25-3.jpg";
+	  document.getElementById("selbut4").src="images/index25-4-.jpg";
+      break;
+
+ }
+  
+}
+
+function showimg2(s){
+//alert(s);
+document.getElementById("AD_Table"+s).style.display="";
+for(i=5;i<10;i++)
+{    
+     if(i==s)
+	 {
+          continue;
+     }
+          document.getElementById("AD_Table"+i).style.display="none";
+}
+
+switch(s)
+{
+case "5":
+      
+      document.getElementById("selbut5").src="images/2ji-59.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "6":
+      
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60-.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "7":
+      
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61-.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "8":
+      
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62-.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63.jpg";
+	  break;
+case "9":
+      document.getElementById("selbut5").src="images/2ji-59-.jpg";
+      document.getElementById("selbut6").src="images/2ji-60.jpg";
+      document.getElementById("selbut7").src="images/2ji-61.jpg";
+	  document.getElementById("selbut8").src="images/2ji-62.jpg";
+	  document.getElementById("selbut9").src="images/2ji-63-.jpg";
+	  break;
+ }
+  
+}
+</script>
+</head>
+<body class="body">
+
+
+
+
+
+
+
+
+
+
+
+
+<script Language="JavaScript" src="../../script/MD5.js"></script>
+<link rel="icon" href="/images/cnu.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/cnu.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style_home.css" rel="stylesheet" type="text/css">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="../Scripts/rss.js" type="text/javascript"></script>
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+
+<div id="home_banner" style="background:url(images/top2_banner.jpg) no-repeat"></div>
+<div align="center" id="menu_bk">
+  <div id="menu"> 
+     <li ><a href="mainPageIndex.do" hidefocus="hidefocus">��ҳ</a></li> 
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=1" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=2" hidefocus="hidefocus">�Ƽ��ƻ�</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=3" hidefocus="hidefocus">�Ƽ�����</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=4" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=5" hidefocus="hidefocus">�ɹ�����</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=6" hidefocus="hidefocus">֪ʶ��Ȩ</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=7" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=8" hidefocus="hidefocus">��������</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=9" hidefocus="hidefocus">������ϵ</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=10" hidefocus="hidefocus">����ר��</a></li>
+     
+	 <li  ><a href="mainPageIndex.do?actionType=initColumn&columnId=328" hidefocus="hidefocus">ѧ�罨��</a></li>
+     
+  </div>
+ <div id="u_menu">&nbsp;</div>
+ </div>
+
+ <div id="white">
+   <div id="LanMu_name">
+     <div style="float:left"><img src="images/upload/tzgg.jpg"  width="183" height="100"></div>
+     <div style="float:right; text-align:right;">
+       <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','732','height','105','src','flash/img','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','flash/img' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="732" height="105">
+         <param name="movie" value="flash/img.swf">
+         <param name="quality" value="high">
+         <embed src="flash/img.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="732" height="105"></embed>
+       </object>
+     </noscript></div>
+   </div>
+     
+ 
+<!--����-->
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="/images/cnu.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/cnu.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style_home.css" rel="stylesheet" type="text/css">
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="Scripts/rss.js" type="text/javascript"></script>
+<script Language="JavaScript" src="../../script/MD5.js"></script>
+
+
+
+<div id="white">
+
+   <div id="LanMu_content">
+     <div id="LanMu_menu">
+<style type="text/css">
+<!--
+/**{margin:0;padding:0;border:0;}*/
+#nav {
+	width:163px;
+	line-height: 32px;
+	list-style-type: none;
+	text-align:left;
+}
+/*==================һ��Ŀ¼===================*/
+#nav a {
+	width: 147px;
+	display: block;
+	padding-left:15px; /*Width(һ��Ҫ)������������Li������*/
+	height: 25px;
+	line-height:12px;
+	padding-top:7px;
+}
+#nav li {
+	float:left;
+	background:url(images/branch/Menu_L_bk.gif) no-repeat;
+}
+#nav li a:hover{
+	background: url(images/branch/Menu_L_bk_over.gif) no-repeat;
+}
+#nav li a:active {
+	background: url(images/branch/Menu_L_bk_down.gif) no-repeat;
+}
+
+#nav a:link  {
+ color:#000000; text-decoration:none;
+}
+#nav a:visited  {
+ color:#000000;text-decoration:none;
+}
+#nav a:hover  {
+ color:#ffffff;text-decoration:unbderline;}
+#nav a:active  {
+ color:#ffffff;text-decoration:unbderline;}
+/*==================����Ŀ¼===================*/
+#nav li ul {
+ list-style:none;
+ text-align:left;
+}
+#nav li ul li{
+	
+}
+#nav li ul a{
+	padding-left:25px;
+	width:137px; /* padding-left����Ŀ¼�����������ƶ�����Width������������=(�ܿ���-padding-left)*/
+}
+/*�����Ƕ���Ŀ¼��������ʽ*/
+#nav li ul a:link  {
+	text-decoration:none;
+	background: url(images/branch/Menu_Lb.gif) no-repeat;
+}
+#nav li ul a:visited  {
+	background: url(images/branch/Menu_Lb.gif) no-repeat;
+	text-decoration:none;
+}
+#nav li ul a:hover {
+	color:#000000;
+	text-decoration:none;
+	font-weight:normal;
+	background: url(images/branch/Menu_Lb_over.gif) no-repeat; 
+}
+#nav li ul a:active {
+	color:#000000;
+	text-decoration:none;
+	font-weight:normal;
+	background-: url(images/branch/Menu_Lb_down.gif) no-repeat; 
+}
+/*==============================*/
+#nav li:hover ul {
+ left: auto;
+}
+#nav li.sfhover ul {
+ left: auto;
+}
+#content {
+ clear: left; 
+}
+#nav ul.collapsed {
+ display: none;
+}
+
+#PARENT{
+	width:163px;
+	margin: 0px 10px 50px 10px;
+}
+-->
+</style>
+
+<div id="PARENT">
+<ul id="nav">
+    
+    <li ><a href="mainPageIndex.do?actionType=initArticle&columnId=12&currentColumn.id=76" hidefocus="hidefocus" >֪ͨ����</a></a>
+	
+    </li>
+     
+</ul>
+</div>
+
+<script type=text/javascript><!--
+var LastLeftID = "";
+function menuFix() {
+ var obj = document.getElementById("nav").getElementsByTagName("li");
+ for (var i=0; i<obj.length; i++) {
+  obj[i].onmouseover=function() {
+   this.className+=(this.className.length>0? " ": "") + "sfhover";
   }
+  obj[i].onMouseDown=function() {
+   this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  obj[i].onMouseUp=function() {
+   this.className+=(this.className.length>0? " ": "") + "sfhover";
+  }
+  obj[i].onmouseout=function() {
+   this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"), "");
+  }
+ }
+}
+function DoMenu(emid)
+{
+ if(emid=="null") {return;}
+ var obj = document.getElementById(emid); 
+ obj.className = (obj.className.toLowerCase() == "expanded"?"collapsed":"expanded");
+ if((LastLeftID!="")&&(emid!=LastLeftID)) //�ر���һ��Menu
+ {
+  document.getElementById(LastLeftID).className = "collapsed";
+ }
+ LastLeftID = emid;
+}
+function GetMenuID()
+{
+ var MenuID="";
+ var _paramStr = new String(window.location.href);
+ var _sharpPos = _paramStr.indexOf("#");
+ 
+ if (_sharpPos >= 0 && _sharpPos < _paramStr.length - 1)
+ {
+  _paramStr = _paramStr.substring(_sharpPos + 1, _paramStr.length);
+ }
+ else
+ {
+  _paramStr = "";
+ }
+ 
+ if (_paramStr.length > 0)
+ {
+  var _paramArr = _paramStr.split("&");
+  if (_paramArr.length>0)
+  {
+   var _paramKeyVal = _paramArr[0].split("=");
+   if (_paramKeyVal.length>0)
+   {
+    MenuID = _paramKeyVal[1];
+   }
+  }
+  /*
+  if (_paramArr.length>0)
+  {
+   var _arr = new Array(_paramArr.length);
+  }
+  //ȡ����#�����ģ��˵�ֻ���õ�Menu
+  //for (var i = 0; i < _paramArr.length; i++)
+  {
+   var _paramKeyVal = _paramArr[i].split('=');
+   
+   if (_paramKeyVal.length>0)
+   {
+    _arr[_paramKeyVal[0]] = _paramKeyVal[1];
+   }  
+  }
+  */
+ }
+ 
+ if(MenuID!="")
+ {
+  DoMenu(MenuID)
+ }
+}
+GetMenuID(); //*������function��˳��Ҫע��һ�£���Ȼ��Firefox��GetMenuID()����Ч��
+menuFix();
+--></script>
+     </div>
+
+<!--�м�-->
+
+
+
+
+
+
+
+
+
+<SCRIPT language=javascript>
+var docBody=null;
+function zoomDoc(size){
+	if(!docBody){
+		return;
+	}
+	
+	docBody.style.fontSize = size + 'px';
+	var __childs = docBody.childNodes;
+	for(var i=0;i<__childs.length;i++)
+	{
+		if(__childs[i].nodeType==1)
+		{
+			__childs[i].style.fontSize=size + 'px';
+		}
+	}
+}
+
+function init()
+{
+	docBody=document.getElementById('artical_real');
+}
+window.onload=init;
+</SCRIPT>
+
+<div id="LanMu_rightarea">
+      <div id="guide">
+         <img src="images/branch/guide.gif" width="24" height="22" align="absmiddle"><a href="mainPageIndex.do">��ҳ</a>
+          &gt; <a href="mainPageIndex.do?actionType=initColumn&columnId=12">֪ͨ����</a>   &gt; <a href="mainPageIndex.do?actionType=initArticle&columnId=12&currentColumn.id=76">֪ͨ����</a>       </div>
+       <div id="search_at_branch"></div>      
+     
+       <div id="Curent_name">
+         <div style="float:left"><img src="images/branch/open_column.gif" width="31" height="27"></div>
+         <div id="Current_title" style="float:left">֪ͨ����</div>
+         <div style="float:right"><img src="images/branch/open_column_r.gif" width="7" height="27"></div>
+       </div>
+         
+       <div id="content">
+         <div align="center" id="title">
+         	
+			<span class="t16yh"><b>����ת��������Ȼ��ѧ����ίԱ��-�������������������˻����о�������Ŀ2016������Ŀָ��</b></span><br>
+			
+			<span class="date">2016-08-14</span>&nbsp;&nbsp; <span class="text_gray">[<a href="javascript:zoomDoc(16);">��</a>] [<a href="javascript:zoomDoc(14);">��</a>] [<a href="javascript:zoomDoc(12);">С</a>]</span>
+			&nbsp;&nbsp;<span class="date">���� 1423 ��</span>
+		 </div>
+
+<div id="artical_real">
+
+	<P><p style="TEXT-ALIGN: center">&nbsp; ��Դ��������Ȼ��ѧ����ί��վ<!--SourceStart--><!--SourceEnd-->��&nbsp;�������ڣ�2016-08-03��</p><p><strong>һ��������ּ</strong></p><p>����������Ȼ��ѧ����ίԱ��������������������2016����2020�깲ͬ���������˻����о�������Ŀ�����¼��ƻ�����������Ŀ����ּ�ڷ��ӹ�����Ȼ��ѧ�����ĵ������ã������ͻ���ȫ���������о������������˲ţ���ͬ�����������о�������ǰ�ؿ�ѧ�����͹ؼ��������⣬�ٽ������˲�ҵ�������ٷ�չ��</p><p>����<strong>����ʵʩԭ��</strong></p><p>����������������Ŀ�ǹ�����Ȼ��ѧ���������ɲ��֣������롢���󡢹������ʽ�ʹ�ð��ա�������Ȼ��ѧ��������������������Ȼ��ѧ�������ϻ�����Ŀ�����취���͡�������Ȼ��ѧ����������Ŀ�ʽ������취�����йع涨ִ�С�</p><p>����������������Ŀ����ȫ�������������������е�λ������Ŀ��Ӧ���������ڸߵ�ԺУ���о���������ҵ�������롣���ں����������о���Ŀ��Ӧ������������ȷ���������ĺ������ݡ���Ҫ�ֹ��ȡ�������Ͻ���ڵ�λ���ñ����ϻ�����Ŀ������������������������������֧�֡�</p><p>����<strong>����2016���������ƻ��������������о�����</strong></p><p>����2016���Ȼ�����������Ŀ��ͨ�����ص�֧����Ŀ������֧�֣���������Ϊ4�ֱ꣬�ӷ���ƽ������ǿ��ԼΪ290��Ԫ/�</p><p>������һ�������˻����㲿�������������о���</p><p>�����ӻ����˲�ҵ��չ�Ļ�������������Χ����������������������������������ĩ��ִ�����Ȼ����㲿�������������ơ����칤�ա�װ�似���ȸ�������������ѧ����չ�������о������Ի������о���Ӧ��������ƽ̨���������ݿ⡢�Ƽ���ƽ̨��֧������չ���о��� ��Ҫ�о�������</p><p>����1. ���ɶ����������������Դ��������źŴ����ؼ�������</p><p>����2. ��е��/��ϵͳ�����������ɲ����ؼ�������</p><p>����3. ������ͨ������ƽ̨�ؼ�������</p><p>����4. ֧�ֻ����˻�����������֪���Ƽ���ƽ̨�ؼ�������</p><p>���������������˹���֧�ż����о���</p><p>����Χ�ƻ����˸�֪���⡢�˻��������жϾ��ߡ�ִ�п��ƵȻ��ڣ��о�������ϵͳ���ɺ�Ӧ�������Ĺ���֧�ż�������Ҫ�о�������</p><p>����1. ���������˵�������֪�����Ｐ�����ؼ�������</p><p>����2. �������������˵�������֪�ں�����ģ̬�˻������ؼ�������</p><p>����3. ����������Ϊģ���Ļ��������ܿ������ۼ�ϵͳ�ؼ�������</p><p>����4. ������ҵ�����˵���ά�Ӿ���֪�������ؼ�������</p><p>����5. ���ӻ������ƶ�������/���˼�ʻ���ĵ���������������ʵ�ؼ�������</p><p>������������ҵ�������о���</p><p>����Χ�������е�����Ϣ������װ��������Դ�ȸ�������ҵ��ս���������о��������������õĹ�ҵ�����˹ؼ���������Ӧ���ƻ������ԡ���ȷ�����ٵ���������ģʽ���ƶ���ҵ�����˵��ռ�����Ҫ�о�������</p><p>����1. ����3C��ҵ�����Թ���װ�����������������ƹؼ�������</p><p>����2. ������ά���������Ļ�����ϵͳ�ؼ������빤�գ�</p><p>����3. ��ҵ����������ѧϰ���̹ؼ�������</p><p>����4. �����ǽṹ��ӵ�������ĸ߾���AGV�ؼ�������</p><p>�������ģ������������о���</p><p>����Χ��������ҽ�Ʒ��񡢼�ͥ���񡢹��ڷ����������������ܻ����˵Ĺ㷺�������о����������������������������֡������������ȸ����͵ķ��������ˣ��ٽ����������ճ������е�Ӧ�á���Ҫ�о�������</p><p>����1. �����������е���֫������������ϵͳ���Ƽ�������ģ̬��Ϣ�ںϿ��Ʒ�����</p><p>����2. �����˿���������ϵͳ�ؼ������������������۷�����</p><p>����3. ������֫���񾭹����ؽ��������˶���ͼʶ�𷽷���</p><p>����4. ������խ�ռ侫׼�����Ļ����˻������Ƽ��Ӿ������ؼ�������</p><p>����5. ������������֯-��е������������Դ��Ϣ��֪�������⣻</p><p>����6. ���Ӷ��ϰ������е������������������ơ����ơ����ȹؼ�������</p><p>�������壩���ֻ������о���</p><p>�����������������»�����������ҵ�Ĺ㷺�������о����պ��졢���󹤳̡���Դ���������ּ��ֵ����������Ļ����ˣ��о����˻�/��/��������ǰ�ؿ�ѧ���о��������ֻ����˵ȣ��Ӷ���ǿ����ִ��������̽��δ֪����������Ҫ�о�������</p><p>����1. ���ڻ�����ϵͳ�ؼ�������������ϴ���գ�</p><p>����2. ����Ұ��ɽ����ҵ���ƶ�������ϵͳ�ؼ�������</p><p>����3. �����ֺ��ƶ��������Ķ�������ϵͳ�ؼ�������</p><p>����4. �ڹ����ع����ۿռ������˶���ѧ�����ƹؼ�������</p><p>����5. �ռ����߶ȿɱ乹�����ܽṹ�崴���������ڹ��ٿط�����</p><p>����6. ����Զ����ˮ�����˴����ơ���Դ���������ƹؼ�������</p><p>����7. �����ͷ������������˽�ģ���ۡ����������ƹؼ�����;</p><p>����8. ������ҩ�����Ļ��ڻ���ϸ��������΢�ɲ����������������ؼ�������</p><p>����9. �����������ܲ��ϵ�����������������ϵͳ�ؼ�������</p><p>����<strong>�ġ��걨Ҫ����ע������</strong></p><p>������һ��������������</p><p>���������ϻ���������Ӧ���߱�����������</p><p>����1. ���ге������о����������������»����о��ľ�����</p><p>����2. ���и߼�רҵ����ְ����ְ�ƣ���</p><p>������վ��ʿ���Լ����ڹ����о���ѧλ�Ŀ�ѧ������Ա�������롣</p><p>�����ص�֧����Ŀ�����о���λ���������ó���2����</p><p>���������������涨��</p><p>����1. ���и߼�רҵ����ְ����ְ�ƣ�����Ա���������߲������뱾���ϻ�����Ŀ�봦�������׶Σ������Ͳ�����������Ŀ�ڹ�����Ȼ��ѧ����ίԱ������������������֮ǰ�������ڳе������������˺���Ҫ�����ߣ�������������Ŀ�ϼ���Ϊ3�������Ŀ���ص���Ŀ���ش���Ŀ���ش��о��ƻ���Ŀ��������������Ŀ��ս���о���Ŀ�������ϻ�����Ŀ��������ѧ������Ŀ��������ѧ������Ŀ������������ѧ������Ŀ�����ҽܳ�������ѧ������Ŀ���ص����ʣ������������о���Ŀ��ֱ�ӷ��ô���200��Ԫ/������֯�����ʣ������������о���Ŀ��������Ϊ��������������Ϊ�����˳е�����Ϊ�����߲��ޣ��������ش���������������Ŀ�����е���ѧ���������о�ר����Ŀ�͹����ش����������豸����ר����Ŀ�������������ص�ʵ�����о���Ŀ���Լ��������޳���1����Ӧ��������Ŀ��</p><p>����2. �����ˣ����������ߣ�ͬ��ֻ������1��������������Ŀ����һ���Ȼ��ñ����ϻ�����������Ŀ�����ˣ������Ȳ�����Ϊ���������롣</p><p>��������������ע�����</p><p>����1. �����ϻ��������鱨������Ϊ2016��9��5����9��16ʱ��</p><p>����2. �����ϻ����������������߷�ʽ׫д���������˾���Ҫ�����£�</p><p>����(1) ���������������ǰ��Ӧ�������Ķ�����Ŀָ�Ϻ͡�2016���ȹ�����Ȼ��ѧ������Ŀָ�ϡ���������֪���������ݣ���������Ŀָ�Ϻ�����Ҫ����������Ŀ����������</p><p>����(2) �����˵�¼��ѧ����������Ϣϵͳhttps://isisn.nsfc.gov.cn/�����¼�����Ϣϵͳ��û��ϵͳ�˺ŵ��������������е�λ����������ϵ�����뿪����������׫д����Ҫ��׫д�����顣</p><p>����(3) �������е���������ѡ�������ϻ�����Ŀ��������˵��ѡ�����ص�֧����Ŀ������ע˵��ѡ����NSFC-���ڻ����˻����о�������Ŀ������������1����������2����ѡ�񹤳������Ͽ�ѧ����E��ͷ������Ϣ��ѧ����F��ͷ���������롣����ѡ����׼ȷ��δѡ������Ŀ���뽫����������</p><p>�����ص�֧����Ŀ���о�����Ӧ��д��2017��1��1��-2020��12��31�ա���</p><p>�� (4) ������Ӧ���������ϻ����ص�֧����Ŀ��������׫д����׫д�����飬��������������ǰע�����������о�������ӦΪ��ָ�������о����򣩣������������Ѿ��е��뱾���ϻ������صĹ��������Ƽ��ƻ���Ŀ��Ӧ���ڱ������ĵġ��о������빤����������������������Ŀ������������Ŀ����������ϵ��</p><p>����(5) ������Ӧ���ݡ�������Ȼ��ѧ����������Ŀ�ʽ������취�����йع涨���Լ���������Ȼ��ѧ������Ŀ�ʽ�Ԥ��������˵�����ľ���Ҫ�󣬰��ա�Ŀ�������ԡ����������ԡ����ú����ԡ��Ļ���ԭ�����������ơ�������Ȼ��ѧ������Ŀ�ʽ�Ԥ����������Ŀ�ʽ���Ϊֱ�ӷ��úͼ��ӷ��ã������˽�����дֱ�ӷ��ò��֣����ӷ�����ϵͳ�Զ����ɡ�������λ��ͬ�е�һ����Ŀ�ģ������˺ͺ����о���λ�Ĳ�����Ӧ���ֱ�������Ŀ�ʽ�Ԥ�㣬�����ڵ�λ���˺����������˻��ܱ��ơ�</p><p>����(6) ����������������׫д���������ύ���������鼰�������ϣ����ز���ӡ����PDF�汾�����飬�����е�λ�ύǩ�ֺ���ֽ��������ԭ���Լ������ر�˵��Ҫ���ύ��ֽ�ʲ���ԭ���ȸ�����</p><p>����(7) ������Ӧ��ֽ֤�������������Ӱ�����һ�¡�</p><p>����(8) �����ϻ���������Ŀ��ִ���ڼ��γɵ��й����ġ�ר�����о����桢������ר�����������񽱡��ɹ������ȳɹ���Ӧע����NSFC-���ڻ����˻����о�������Ŀ��������Ŀ��׼�ţ�����</p><p>����3. ���е�λӦ�Ա���λ���������ύ�������ϵ���ʵ�Ժ������Խ������ˣ����ڹ涨ʱ���ڽ��������ϱ��͹�����Ȼ��ѧ����ίԱ�ᡣ����Ҫ�����£�</p><p>����(1) Ӧ�ڹ涨����Ŀ������ֹ���ڣ�2016��9��9��16ʱ��ǰ�ύ����λ���������鼰�������ϣ���ͳһ���;���λǩ�ָ��º���ֽ��������ԭ����һʽһ�ݣ���Ҫ�����͵�ֽ�ʸ������ϡ�</p><p>����(2) �ύ����������ʱ��Ӧͨ����Ϣϵͳ����ȷ�ϡ�</p><p>����(3) ����ֽ����������ʱ����Ӧ��������λ������������Ŀ�嵥�����ϲ������������ա�</p><p>����(4) �ɽ�ֽ��������ֱ���ʹ������ʼ���������Ȼ��ѧ����ίԱ����Ŀ���Ͻ��չ����顣�����ʼķ�ʽ�ģ�������Ŀ������ֹ����ǰ���Է����ʴ�����Ϊ׼���Կ��ݷ�ʽ�ʼģ������������롣</p><p>����4. ���Ͻ��չ�������ϵ��ʽ��</p><p>����ͨѶ��ַ�������к�����˫��·83�Ź�����Ȼ��ѧ����ίԱ����Ŀ���Ͻ��չ����飨����¥101���䣩</p><p>�����ʡ����ࣺ100085</p><p>������ϵ�绰��010-62328591</p><p>����5. ��������˫����ϵ��ʽ��</p><table cellspacing="0" cellpadding="0" width="686" uetable="null"><tbody><tr class="firstRow"><td valign="top" width="50"><p>����������Ȼ��ѧ����ίԱ��</p><p>�����ء�ַ�������к�����˫��·83��</p><p>�����ʡ��ࣺ100085</p><p>������ϵ�ˣ����� ����</p><p>�����硡����010-62328484��62327015</p><p>���������ʼ���leirong@nsfc.gov.cn</p><p>��������������wangyan@nsfc.gov.cn</p></td><td valign="top" width="49"><p>�����пƼ�����ίԱ��</p><p>�ء�ַ�������и�����·��������C��</p><p>�ʡ��ࣺ518035</p><p>��ϵ�ˣ����� �ֻ�</p><p>�硡����0755-86168164��86168951</p><p>�����ʼ���zhangz@szicc.net</p><p>����������linh@szicc.net</p></td></tr></tbody></table><p><!--ContentEnd--></p><p>&nbsp;</p></P>	
+	
+	<!-- ����Ϊ���ݣ�һ��Ϊ���� -->
+	
+	
+	
+</div>
+<!-- ΢�ŷ�������ֻ���Է�����֪ͨ���桱��������̬�����Ƽ���̬(�Ƽ���Ϣ)��������Ŀ
+	��������Ŀ���ֱ�������names�е���Ŀ����
+ -->
+<!-- �������·�����΢�ŵĹ��� -->
+
+<!-- <div class="fenxiang">
+	<div class="bshare-custom icon-medium-plus">
+		<a title="������" href="http://www.bShare.cn/" id="bshare-shareto" class="bshare-more">������</a>
+		<a title="������΢��"  class="bshare-weixin"></a>
+	</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+<a class="bshareDiv" onclick="javascript:return false;"></a>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>	
+</div>
+ -->
+<div class="bshare-custom">
+<div class="bsPromo bsPromo2"></div>
+	<a title="����ƽ̨" class="bshare-more bshare-more-icon more-style-addthis"></a>
+	<a title="������QQ�ռ�" class="bshare-qzone"></a>
+	<a title="����������΢��" class="bshare-sinaminiblog"></a>
+	<a title="��������Ѷ΢��" class="bshare-qqmb"></a>
+	<a title="������������" class="bshare-renren"></a>
+	<a title="������΢��" class="bshare-weixin" href="javascript:void(0);"></a>
+</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+
+
+<div class="quotes">
+  </div>
+       <div id="boot"></div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+  
+
+<script Language="JavaScript" src="../../script/MD5.js"></script>
+<link rel="icon" href="/images/cnu.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/cnu.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style_home.css" rel="stylesheet" type="text/css">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="../Scripts/rss.js" type="text/javascript"></script>
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+
+
+<div id="copyright">  
+	  <div class="di"><font color="#FFFFFF" face="Tahoma, Verdana" class="bai">Copyright &copy;<a href="http://kjc.ysu.edu.cn/">��ɽ��ѧ��ѧ�����о�Ժ��Ȩ����</a><br>
+      <a href="http://www.e-plugger.com"><img src="images/ep.gif" border="0" /></a>&nbsp;����֧�֣��������������Ƽ��������޹�˾</font></div>
+      <div class="yjx"><a href="mainPageIndex.do?actionType=initIdea"><img src="images/yjx.gif" border="0" /></a></div>
+</div> 
+
+</body>
+</html>
+</body>
+</html>

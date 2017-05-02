@@ -10,8 +10,7 @@ const spiderNotice = ($, i) => {
   if (i < length) {
     const title = $('a', '#main_mid_content').eq(i).attr('title')
       .trim()
-      .replace(/\//g, '-'
-      .replace(/\\/g, '-'))
+      .replace(/\//g, '-').replace(/\\/g, '-')
       .replace(/</g, '《')
       .replace(/>/g, '》')
       .replace(/:/g, '：')
@@ -41,8 +40,8 @@ const spiderNotice = ($, i) => {
     } catch (e) {}
 
     return new Promise((resolve, reject) => {
-      setTimeout(resolve, 1);
-    })
+        setTimeout(resolve, 1);
+      })
       .then(() => new Promise((resolve, reject) => {
         request(href, {
           timeout: 3000,
@@ -50,7 +49,7 @@ const spiderNotice = ($, i) => {
           if (error) {
             reject(error);
           } else {
-            resolve(cheerio.load(body));
+            resolve(body);
           }
         });
       }))
@@ -60,7 +59,7 @@ const spiderNotice = ($, i) => {
         return spiderNotice($, i + 1);
       })
       .catch((error) => {
-        if (error.code !== 'ETIMEDOUT') {
+        if (error.code !== 'ETIMEDOUT' && error.code !== 'ESOCKETTIMEDOUT') {
           console.log(error);
         }
         const patto = new RegExp('info');
@@ -81,23 +80,23 @@ const spiderList = (p) => {
     console.log('完成！');
   } else {
     new Promise((resolve, reject) => {
-      request(`http://noticeold.ysu.edu.cn/index.jsp?a50767t=358&a50767p=${p}&a50767c=20`, {
-        timeout: 3000,
-      }, (error, response, body) => {
-        if (error) {
-          reject(error);
-        } else {
-          resolve(cheerio.load(body));
-        }
-      });
-    })
+        request(`http://noticeold.ysu.edu.cn/index.jsp?a50767t=358&a50767p=${p}&a50767c=20`, {
+          timeout: 3000,
+        }, (error, response, body) => {
+          if (error) {
+            reject(error);
+          } else {
+            resolve(cheerio.load(body));
+          }
+        });
+      })
       .then($ => spiderNotice($, 0))
       .then(() => {
         console.log(`${p}/358`);
         spiderList(p + 1);
       })
       .catch((error) => {
-        if (error.code !== 'ETIMEDOUT') {
+        if (error.code !== 'ETIMEDOUT' && error.code !== 'ESOCKETTIMEDOUT') {
           console.log(error);
         }
         spiderList(p);
