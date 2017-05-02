@@ -9,14 +9,15 @@ const spiderNotice = ($, i) => {
   const length = $('li', '#main_mid_content').length;
   if (i < length) {
     const title = $('a', '#main_mid_content').eq(i).attr('title')
-      .trim()
-      .replace(/\//g, '-').replace(/\\/g, '-')
+      .replace(/\//g, '-')
+      .replace(/\\/g, '-')
       .replace(/</g, '《')
       .replace(/>/g, '》')
       .replace(/:/g, '：')
       .replace(/"/g, '“')
       .replace(/\*/g, '&')
-      .replace(/\?/g, '？');
+      .replace(/\?/g, '？')
+      .replace(/\s*/g, '');
     let href = $('a', '#main_mid_content').eq(i).attr('href').trim();
     const patt = new RegExp('http://');
     if (!patt.test(href)) {
@@ -40,8 +41,8 @@ const spiderNotice = ($, i) => {
     } catch (e) {}
 
     return new Promise((resolve, reject) => {
-        setTimeout(resolve, 1);
-      })
+      setTimeout(resolve, 1);
+    })
       .then(() => new Promise((resolve, reject) => {
         request(href, {
           timeout: 3000,
@@ -54,7 +55,11 @@ const spiderNotice = ($, i) => {
         });
       }))
       .then((data) => {
-        fs.writeFileSync(`result/${year}/${month}/${day}/${title}.html`, data);
+        if (!data.replace(/\s*/g, '')) {
+          throw new Error('no content');
+        } else {
+          fs.writeFileSync(`result/${year}/${month}/${day}/${title}.html`, data);
+        }
         // console.log(`${i + 1}/${length}`);
         return spiderNotice($, i + 1);
       })
@@ -76,20 +81,20 @@ const spiderNotice = ($, i) => {
 
 const spiderList = (p) => {
   if (p === 359) {
-    fs.writeFileSync('errRseult.txt', errRseult);
+    fs.writeFileSync('errRseult.txt', errRseult.join('\r\n'));
     console.log('完成！');
   } else {
     new Promise((resolve, reject) => {
-        request(`http://noticeold.ysu.edu.cn/index.jsp?a50767t=358&a50767p=${p}&a50767c=20`, {
-          timeout: 3000,
-        }, (error, response, body) => {
-          if (error) {
-            reject(error);
-          } else {
-            resolve(cheerio.load(body));
-          }
-        });
-      })
+      request(`http://noticeold.ysu.edu.cn/index.jsp?a50767t=358&a50767p=${p}&a50767c=20`, {
+        timeout: 3000,
+      }, (error, response, body) => {
+        if (error) {
+          reject(error);
+        } else {
+          resolve(cheerio.load(body));
+        }
+      });
+    })
       .then($ => spiderNotice($, 0))
       .then(() => {
         console.log(`${p}/358`);
